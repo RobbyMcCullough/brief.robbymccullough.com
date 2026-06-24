@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import re
 import shutil
 import subprocess
 from pathlib import Path
@@ -13,11 +14,24 @@ DEFAULT_GENERATOR = (
     Path.home()
     / "Library/CloudStorage/Dropbox/AI/personal-brand/daily-brief-site"
 )
+DAYPART_ORDER = {
+    "morning": 1,
+    "afternoon": 2,
+    "evening": 3,
+}
+
+
+def brief_sort_key(path: Path) -> tuple[str, int, str]:
+    match = re.match(r"(\d{4}-\d{2}-\d{2})(?:-([a-z]+))?$", path.stem)
+    if not match:
+        return (path.stem, 99, path.stem)
+    date, daypart = match.groups()
+    return (date, DAYPART_ORDER.get(daypart or "morning", 1), path.stem)
 
 
 def dated_briefs(generator: Path) -> list[str]:
     content_dir = generator / "content" / "briefs"
-    dates = sorted(path.stem for path in content_dir.glob("*.md"))
+    dates = [path.stem for path in sorted(content_dir.glob("*.md"), key=brief_sort_key)]
     if not dates:
         raise SystemExit(f"No Markdown briefs found in {content_dir}")
     return dates
@@ -56,6 +70,23 @@ def publish(generator: Path, include_latest_archive: bool) -> None:
     feed = public / "feed.json"
     if feed.exists():
         copy_file(feed, SITE_ROOT / "feed.json")
+
+    trmnl_public = public / "trmnl"
+    if trmnl_public.exists():
+        copy_file(trmnl_public / "index.html", SITE_ROOT / "trmnl.html")
+        trmnl_dir = SITE_ROOT / "trmnl"
+        trmnl_dir.mkdir(exist_ok=True)
+
+        trmnl_feed = trmnl_public / "feed.json"
+        if trmnl_feed.exists():
+            copy_file(trmnl_feed, trmnl_dir / "feed.json")
+
+        for archive in sorted(
+            (trmnl_public / "briefs").glob("*/index.html"),
+            key=lambda path: brief_sort_key(path.parent),
+        ):
+            copy_file(archive, trmnl_dir / f"{archive.parent.name}.html")
+        print("Published TRMNL brief to trmnl.html.")
 
     print(f"Published latest brief to index.html: {latest}")
     if archive_dates:

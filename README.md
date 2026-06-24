@@ -32,6 +32,19 @@ Then it copies the generated latest brief to `index.html` and copies older
 briefs to `briefs/YYYY-MM-DD.html`. By default, the latest brief is not also
 duplicated in `briefs/`; tomorrow's run will archive it under its date.
 
+If the generator contains TRMNL e-ink briefs in `content/trmnl-briefs/`, the
+same publish command also copies the latest static display brief to:
+
+```text
+trmnl.html
+```
+
+and dated archives to:
+
+```text
+trmnl/YYYY-MM-DD.html
+```
+
 ## Deploy
 
 Push to `main` → GitHub Actions SSHes into the Andromeda droplet and runs `git pull`
