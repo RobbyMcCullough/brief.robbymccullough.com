@@ -6,14 +6,14 @@
   <title>Daily Brief: June 18, 2026</title>
   <style>
     :root {
-      --paper: #f7f7f2;
-      --paper-shadow: #deded6;
+      --paper: #fbfaf3;
+      --paper-shadow: #dedbd0;
       --ink: #111;
-      --muted: #4b4b46;
-      --rule: rgba(17, 17, 17, 0.22);
-      --rule-strong: rgba(17, 17, 17, 0.86);
+      --muted: #333;
+      --rule: rgba(17, 17, 17, 0.44);
+      --rule-strong: #111;
       --accent: #111;
-      --shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+      --shadow: 0 18px 46px rgba(0, 0, 0, 0.18);
     }
 
     * { box-sizing: border-box; }
@@ -33,26 +33,26 @@
       pointer-events: none;
       background-image: radial-gradient(rgba(0, 0, 0, 0.06) 0.5px, transparent 0.7px);
       background-size: 4px 4px;
-      opacity: 0.13;
+      opacity: 0.09;
     }
 
     main {
-      width: min(1872px, calc(100vw - 20px));
-      min-height: min(1404px, 100vh - 20px);
-      margin: 10px auto;
+      width: min(1440px, calc(100vw - 32px));
+      min-height: calc(100vh - 32px);
+      margin: 16px auto 32px;
       position: relative;
       z-index: 1;
       background: var(--paper);
-      border: 1px solid rgba(17, 17, 17, 0.28);
+      border: 2px solid rgba(17, 17, 17, 0.72);
       box-shadow: var(--shadow);
-      padding: 10px 16px 14px;
+      padding: 22px 28px 28px;
     }
 
     .masthead {
       display: grid;
-      gap: 7px;
-      border-bottom: 4px double var(--rule-strong);
-      padding-bottom: 7px;
+      gap: 12px;
+      border-bottom: 7px double var(--rule-strong);
+      padding-bottom: 14px;
     }
 
     .eyebrow {
@@ -61,20 +61,21 @@
       gap: 12px;
       flex-wrap: wrap;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 10px;
-      color: var(--muted);
-      border-top: 1px solid var(--rule-strong);
-      border-bottom: 1px solid var(--rule);
-      padding: 4px 0;
+      letter-spacing: 0.09em;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ink);
+      border-top: 5px solid var(--rule-strong);
+      border-bottom: 2px solid var(--rule-strong);
+      padding: 8px 0 7px;
     }
 
     h1 {
       margin: 0;
       text-align: center;
       font-family: "Baskerville", "Times New Roman", serif;
-      font-size: clamp(2rem, 4.2vw, 4.6rem);
-      line-height: 0.86;
+      font-size: clamp(3.7rem, 7vw, 7rem);
+      line-height: 0.9;
       letter-spacing: 0;
       text-wrap: balance;
     }
@@ -84,40 +85,43 @@
       text-align: center;
       font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 10px;
-      color: var(--muted);
+      letter-spacing: 0.1em;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--ink);
     }
 
     .hero-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0;
-      border-top: 1px solid var(--rule);
-      border-bottom: 1px solid var(--rule);
+      border-top: 2px solid var(--rule-strong);
+      border-bottom: 2px solid var(--rule-strong);
     }
 
     .hero-card {
-      padding: 8px 12px 7px;
-      min-height: 74px;
-      border-right: 1px solid var(--rule);
+      padding: 16px 18px 15px;
+      min-height: 118px;
+      border-right: 2px solid var(--rule);
     }
 
     .hero-card:last-child { border-right: none; }
 
     .hero-card .label {
-      margin: 0 0 12px;
+      margin: 0 0 10px;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 9px;
-      color: var(--muted);
+      letter-spacing: 0.08em;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ink);
     }
 
     .hero-card .value {
       margin: 0;
       font-family: "Baskerville", "Times New Roman", serif;
-      font-size: clamp(0.98rem, 1.05vw, 1.28rem);
-      line-height: 1.22;
+      font-size: clamp(1.45rem, 2vw, 2rem);
+      line-height: 1.13;
+      font-weight: 700;
       text-wrap: balance;
     }
 
@@ -125,37 +129,38 @@
       display: flex;
       gap: 12px;
       flex-wrap: wrap;
-      color: var(--muted);
-      font-size: 9px;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
       justify-content: center;
       text-transform: uppercase;
-      letter-spacing: 0.07em;
+      letter-spacing: 0.06em;
     }
 
     .sections {
       display: grid;
-      grid-template-columns: 1.08fr 0.94fr 1fr;
+      grid-template-columns: 1.18fr 0.96fr 0.96fr;
       gap: 0;
-      margin-top: 10px;
+      margin-top: 20px;
       align-items: start;
     }
 
     .paper-column {
       display: grid;
       align-content: start;
-      gap: 10px;
+      gap: 18px;
       min-width: 0;
     }
 
     .paper-column + .paper-column {
-      border-left: 1px solid var(--rule);
-      padding-left: 14px;
-      margin-left: 14px;
+      border-left: 2px solid var(--rule);
+      padding-left: 22px;
+      margin-left: 22px;
     }
 
     .section {
-      padding-top: 6px;
-      border-top: 3px double var(--rule-strong);
+      padding-top: 12px;
+      border-top: 6px double var(--rule-strong);
       break-inside: avoid;
     }
 
@@ -163,96 +168,101 @@
       display: flex;
       align-items: end;
       justify-content: space-between;
-      margin-bottom: 6px;
-      padding-bottom: 4px;
-      border-bottom: 1px solid var(--rule);
+      margin-bottom: 10px;
+      padding-bottom: 7px;
+      border-bottom: 2px solid var(--rule);
     }
 
     h2 {
       margin: 0;
       font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
       text-transform: uppercase;
-      letter-spacing: 0.11em;
-      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      font-size: 1rem;
+      font-weight: 900;
     }
 
-    .section-body { display: grid; gap: 6px; }
+    .section-body { display: grid; gap: 12px; }
 
     .card {
-      border-top: 1px solid var(--rule);
-      padding-top: 5px;
+      border-top: 2px solid var(--rule);
+      padding-top: 10px;
     }
 
     .card:first-child { border-top: none; padding-top: 0; }
 
     .head {
-      margin: 0 0 3px;
+      margin: 0 0 6px;
       font-family: "Baskerville", "Times New Roman", serif;
       font-weight: 700;
-      line-height: 1.22;
-      font-size: 0.91rem;
+      line-height: 1.13;
+      font-size: 1.35rem;
     }
 
     .meta, .detail, .body {
-      margin: 4px 0 0;
+      margin: 8px 0 0;
       line-height: 1.34;
       color: var(--ink);
-      font-size: 0.78rem;
+      font-size: 1.05rem;
     }
 
     .meta {
-      color: var(--muted);
-      font-size: 0.62rem;
+      color: var(--ink);
+      font-size: 0.82rem;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      font-weight: 900;
     }
 
-    .section-best-bets .head { font-size: 1.04rem; }
+    .section-best-bets .head { font-size: 1.5rem; }
     .section-best-bets .card:first-child .head {
-      font-size: 1.18rem;
-      line-height: 1.15;
+      font-size: 2rem;
+      line-height: 1.08;
     }
 
     a {
       color: var(--accent);
-      text-decoration-thickness: 1px;
-      text-underline-offset: 1px;
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
     }
+
+    a:hover { background: rgba(0, 0, 0, 0.08); }
 
     code {
       font-family: "Courier New", "Courier", monospace;
       font-size: 0.88em;
-      background: rgba(0, 0, 0, 0.045);
+      background: rgba(0, 0, 0, 0.07);
       padding: 0.03rem 0.18rem;
-      border: 1px solid rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(0, 0, 0, 0.22);
     }
 
     .footer {
-      margin-top: 9px;
-      color: var(--muted);
-      font-size: 9px;
+      margin-top: 22px;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
       text-align: center;
       text-transform: uppercase;
-      letter-spacing: 0.1em;
-      border-top: 1px solid var(--rule);
-      padding-top: 5px;
+      letter-spacing: 0.08em;
+      border-top: 2px solid var(--rule);
+      padding-top: 9px;
     }
 
     @media (min-width: 1500px) {
       main {
-        width: min(1872px, 100vw);
-        min-height: min(1404px, 100vh);
-        margin: 0 auto;
-        padding: 12px 18px 16px;
+        width: min(1560px, calc(100vw - 48px));
+        margin: 24px auto 40px;
+        padding: 26px 34px 34px;
       }
 
-      h1 { font-size: 92px; }
-      .edition-title { font-size: 15px; }
-      .hero-card .value { font-size: 23px; }
-      .head { font-size: 20px; }
-      .section-best-bets .card:first-child .head { font-size: 30px; }
-      .meta, .detail, .body { font-size: 17px; line-height: 1.34; }
-      .meta { font-size: 13px; }
+      h1 { font-size: 110px; }
+      .edition-title { font-size: 16px; }
+      .hero-card .value { font-size: 34px; }
+      .head { font-size: 24px; }
+      .section-best-bets .card:first-child .head { font-size: 38px; }
+      .meta, .detail, .body { font-size: 19px; line-height: 1.35; }
+      .meta { font-size: 15px; }
     }
 
     @media (max-width: 1020px) {
@@ -267,13 +277,16 @@
     @media (max-width: 780px) {
       .hero-grid { grid-template-columns: 1fr; }
       main {
-        width: min(100vw - 12px, 980px);
-        margin: 6px auto 20px;
-        padding: 10px 12px 16px;
+        width: min(100vw - 16px, 980px);
+        margin: 8px auto 20px;
+        padding: 14px 14px 18px;
       }
+      h1 { font-size: clamp(3rem, 13vw, 5rem); }
+      .eyebrow { font-size: 11px; }
+      .hero-card .value { font-size: 1.55rem; }
       .hero-card {
         border-right: none;
-        border-bottom: 1px solid var(--rule);
+        border-bottom: 2px solid var(--rule);
       }
       .hero-card:last-child { border-bottom: none; }
     }
@@ -302,7 +315,7 @@
       <div class="meta-row">
         <span>Rendered from Markdown brief</span>
         <span><a href="./source.md">Open source file</a></span>
-        <span>Generated June 24, 2026 at 7:17 AM</span>
+        <span>Generated June 24, 2026 at 7:29 AM</span>
       </div>
     </section>
 
