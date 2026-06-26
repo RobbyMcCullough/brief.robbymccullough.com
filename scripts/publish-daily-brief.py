@@ -53,6 +53,15 @@ def publish(generator: Path, include_latest_archive: bool) -> None:
     public = generator / "public"
 
     copy_file(public / "index.html", SITE_ROOT / "index.html")
+    for asset_name in (
+        "favicon-16x16.png",
+        "favicon-32x32.png",
+        "apple-touch-icon.png",
+        "site-icon-512.png",
+    ):
+        asset = public / asset_name
+        if asset.exists():
+            copy_file(asset, SITE_ROOT / asset_name)
 
     archive_dates = dates if include_latest_archive else dates[:-1]
     briefs_dir = SITE_ROOT / "briefs"
