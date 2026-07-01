@@ -159,5 +159,12 @@
     "review_time": "July 1, 2026 at 7:31 AM PDT.",
     "path": "briefs/2026-07-01-morning/",
     "source": "2026-07-01-morning.md"
+  },
+  {
+    "date": "2026-07-01-afternoon",
+    "title": "Daily Personal Brand Brief - 2026-07-01 Afternoon",
+    "review_time": "July 1, 2026 at 12:30 PM PDT.",
+    "path": "briefs/2026-07-01-afternoon/",
+    "source": "2026-07-01-afternoon.md"
   }
 ]
