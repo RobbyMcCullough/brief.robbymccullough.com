@@ -110,5 +110,12 @@
     "review_time": "June 30, 2026 at 7:31 AM PDT.",
     "path": "trmnl/briefs/2026-06-30-morning/",
     "source": "2026-06-30-morning.md"
+  },
+  {
+    "date": "2026-06-30-evening",
+    "title": "Evening Brief - 2026-06-30",
+    "review_time": "June 30, 2026 at 5:54 PM PDT.",
+    "path": "trmnl/briefs/2026-06-30-evening/",
+    "source": "2026-06-30-evening.md"
   }
 ]
