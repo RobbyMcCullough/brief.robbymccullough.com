@@ -201,5 +201,12 @@
     "review_time": "July 5, 2026 at 12:31 PM PDT.",
     "path": "trmnl/briefs/2026-07-05-afternoon/",
     "source": "2026-07-05-afternoon.md"
+  },
+  {
+    "date": "2026-07-06-morning",
+    "title": "Morning Brief - 2026-07-06",
+    "review_time": "July 6, 2026 at 10:01 AM PDT.",
+    "path": "trmnl/briefs/2026-07-06-morning/",
+    "source": "2026-07-06-morning.md"
   }
 ]
