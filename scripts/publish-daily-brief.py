@@ -120,7 +120,14 @@ def main() -> None:
     parser.add_argument(
         "--include-latest-archive",
         action="store_true",
+        default=True,
         help="Also write the latest brief to briefs/YYYY-MM-DD.html.",
+    )
+    parser.add_argument(
+        "--exclude-latest-archive",
+        action="store_false",
+        dest="include_latest_archive",
+        help="Skip writing the latest brief archive and publish it only at index.html.",
     )
     args = parser.parse_args()
     publish(args.generator, args.include_latest_archive)

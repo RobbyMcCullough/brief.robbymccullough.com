@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Personal Brand Brief - 2026-07-06 Morning</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/site-icon-512.png">
+  <style>
+    :root {
+      --paper: #fbfaf3;
+      --paper-shadow: #dedbd0;
+      --ink: #111;
+      --muted: #333;
+      --rule: rgba(17, 17, 17, 0.44);
+      --rule-strong: #111;
+      --accent: #111;
+      --shadow: 0 18px 46px rgba(0, 0, 0, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Georgia", "Times New Roman", serif;
+      background: var(--paper-shadow);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(0, 0, 0, 0.06) 0.5px, transparent 0.7px);
+      background-size: 4px 4px;
+      opacity: 0.09;
+    }
+
+    main {
+      width: min(1380px, calc(100vw - 32px));
+      min-height: calc(100vh - 32px);
+      margin: 16px auto 32px;
+      position: relative;
+      z-index: 1;
+      background: var(--paper);
+      border: 2px solid rgba(17, 17, 17, 0.72);
+      box-shadow: var(--shadow);
+      padding: 18px 24px 26px;
+    }
+
+    .masthead {
+      display: grid;
+      gap: 9px;
+      border-bottom: 5px double var(--rule-strong);
+      padding-bottom: 10px;
+    }
+
+    .eyebrow {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ink);
+      border-top: 4px solid var(--rule-strong);
+      border-bottom: 2px solid var(--rule-strong);
+      padding: 6px 0 5px;
+    }
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-size: clamp(3.2rem, 5.6vw, 5.9rem);
+      line-height: 0.92;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .edition-title {
+      margin: 0;
+      text-align: center;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-top: 2px solid var(--rule-strong);
+      border-bottom: 2px solid var(--rule-strong);
+    }
+
+    .hero-card {
+      padding: 12px 16px 11px;
+      min-height: 94px;
+      border-right: 2px solid var(--rule);
+    }
+
+    .hero-card:last-child { border-right: none; }
+
+    .hero-card .label {
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .hero-card .value {
+      margin: 0;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-size: clamp(1.22rem, 1.55vw, 1.62rem);
+      line-height: 1.16;
+      font-weight: 600;
+      text-wrap: balance;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 800;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: 1.18fr 0.96fr 0.96fr;
+      gap: 0;
+      margin-top: 14px;
+      align-items: start;
+    }
+
+    .paper-column {
+      display: grid;
+      align-content: start;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .paper-column + .paper-column {
+      border-left: 2px solid var(--rule);
+      padding-left: 20px;
+      margin-left: 20px;
+    }
+
+    .section {
+      padding-top: 9px;
+      border-top: 5px double var(--rule-strong);
+      break-inside: avoid;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--rule);
+    }
+
+    h2 {
+      margin: 0;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .section-body { display: grid; gap: 10px; }
+
+    .card {
+      border-top: 2px solid var(--rule);
+      padding-top: 8px;
+    }
+
+    .card:first-child { border-top: none; padding-top: 0; }
+
+    .head {
+      margin: 0 0 4px;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-weight: 600;
+      line-height: 1.2;
+      font-size: 1.12rem;
+    }
+
+    .meta, .detail, .body {
+      margin: 6px 0 0;
+      line-height: 1.36;
+      color: var(--ink);
+      font-size: 0.98rem;
+    }
+
+    .meta {
+      color: var(--ink);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      font-weight: 900;
+    }
+
+    .section-best-bets .head { font-size: 1.14rem; }
+    .section-best-bets .card:first-child .head {
+      font-size: 1.55rem;
+      line-height: 1.12;
+      font-weight: 700;
+    }
+
+    .section-best-bets .card:not(:first-child) .head {
+      font-size: 1rem;
+      line-height: 1.26;
+      font-weight: 500;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { background: rgba(0, 0, 0, 0.08); }
+
+    code {
+      font-family: "Courier New", "Courier", monospace;
+      font-size: 0.88em;
+      background: rgba(0, 0, 0, 0.07);
+      padding: 0.03rem 0.18rem;
+      border: 1px solid rgba(0, 0, 0, 0.22);
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-top: 2px solid var(--rule);
+      padding-top: 9px;
+    }
+
+    @media (min-width: 1500px) {
+      main {
+        width: min(1480px, calc(100vw - 48px));
+        margin: 20px auto 36px;
+        padding: 22px 30px 32px;
+      }
+
+      h1 { font-size: 94px; }
+      .edition-title { font-size: 15px; }
+      .hero-card .value { font-size: 27px; }
+      .head { font-size: 20px; }
+      .section-best-bets .card:first-child .head { font-size: 29px; }
+      .section-best-bets .card:not(:first-child) .head { font-size: 18px; }
+      .meta, .detail, .body { font-size: 17px; line-height: 1.36; }
+      .meta { font-size: 13px; }
+    }
+
+    @media (max-width: 1020px) {
+      .sections { grid-template-columns: 1fr; gap: 12px; }
+      .paper-column + .paper-column {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      main {
+        width: min(100vw - 16px, 980px);
+        margin: 8px auto 20px;
+        padding: 14px 14px 18px;
+      }
+      h1 { font-size: clamp(3rem, 13vw, 5rem); }
+      .eyebrow { font-size: 11px; }
+      .hero-card .value { font-size: 1.35rem; }
+      .hero-card {
+        border-right: none;
+        border-bottom: 2px solid var(--rule);
+      }
+      .hero-card:last-child { border-bottom: none; }
+    }
+    </style>
+</head>
+<body>
+  <main>
+    <section class="masthead">
+      <div class="eyebrow">
+        <span>Robby McCullough Morning Brief</span>
+        <span>Personal Brand Desk</span>
+        <span>July 6, 2026 at 10:01 AM PDT.</span>
+      </div>
+      <h1>The Morning Brief</h1>
+      <p class="edition-title">Daily Personal Brand Brief - 2026-07-06 Morning</p>
+      <div class="hero-grid">
+        <article class="hero-card">
+          <p class="label">Forecast</p>
+          <p class="value">Petaluma is another fog-to-sun mid-70s day, inland heat is the contrast with Roseville near 93, and the next 2-4 days mainly bring a modest warm-up plus a shallower marine layer rather than a sharp Bay Area heat event.</p>
+        </article>
+        <article class="hero-card">
+          <p class="label">Lead Assignment</p>
+          <p class="value">Best move: reply to HN&#x27;s active <a href="https://news.ycombinator.com/item?id=48799929" target="_blank" rel="noreferrer">customer-support relationship thread</a> with a grounded operator take on why support feels personal, but still needs reproducible workflows, boundaries, and product feedback loops.</p>
+        </article>
+      </div>
+      <div class="meta-row">
+        <span>Rendered from Markdown brief</span>
+        <span><a href="./source.md">Open source file</a></span>
+        <span>Generated July 06, 2026 at 12:33 PM</span>
+      </div>
+    </section>
+
+    <section class="sections">
+      <div class="paper-column lead-column">
+    <section class="section section-best-bets">
+      <div class="section-head">
+        <h2>Best Bets</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card best-bet">
+              <p class="head">1. Hacker News - <a href="https://news.ycombinator.com/item?id=48799929" target="_blank" rel="noreferrer">Building relationships with customers through support didn&#x27;t turn out as hoped</a></p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Published: July 5 at 7:06 PM PDT via HN Algolia/Firebase; roughly 14.9 hours old at check. Latest visible comment: July 6 at 9:56 AM PDT, roughly 5 minutes old. 271 points / 165 comments at source check.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Summary: A very active discussion about a podcast app founder&#x27;s hard lessons in support, compassion, unreproducible bugs, user entitlement, and the emotional load of customer relationships.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Why Robby has standing: Beaver Builder has lived through years of WordPress support, agency expectations, edge-case bugs, and the tension between being helpful and keeping a small team sane.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Best angle: Support is not just &quot;be nicer&quot; or &quot;hold the line&quot;; the durable system is making customer pain legible enough to route into product, docs, bug reproduction, and clear escalation.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Draft: &quot;The part I keep coming back to is that support creates a relationship whether you want one or not. A customer with an unreproducible bug is often describing something real, but the team still needs a way to turn that into evidence: steps, environment, screenshots, logs, account history, or a clean &#x27;we cannot reproduce this yet&#x27; boundary. The healthiest support systems I have seen make empathy operational. They help the customer feel heard without making every issue a bespoke emotional negotiation.&quot;</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Risk: The thread has some sharp judgments about the author and users; keep it practical and avoid dunking on either side.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Guidance: <code>reply now</code>.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">2. Hacker News - <a href="https://news.ycombinator.com/item?id=48804182" target="_blank" rel="noreferrer">Show HN: Scan your AI agents for dangerous capabilities</a></p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Published: July 6 at 6:17 AM PDT via HN Algolia/Firebase; roughly 3.8 hours old at check. Latest visible comment: July 6 at 9:55 AM PDT, roughly 6 minutes old. 35 points / 19 comments at source check.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Summary: A Show HN for an open-source scanner that flags risky agent capabilities in Python, JavaScript, and TypeScript projects; comments are already debating whether this belongs in app tooling, OS permissions, or runtime isolation.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Why Robby has standing: Agentic website workflows will need trust surfaces before agencies let them touch client sites: permissions, preview, audit trail, staged changes, rollback, and human approval.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Best angle: The interesting part is not &quot;scan all the things&quot;; it is matching each risky capability to a human-visible control before an agent can edit or deploy a real site.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Talking points: &quot;The scanner is useful if it maps findings to an approval UX.&quot; &quot;For websites, the scary action is not abstract autonomy; it is changing a client&#x27;s production surface.&quot; &quot;The mature pattern is capability inventory + scoped permission + preview + rollback.&quot;</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Risk: Small product thread and security claims can get vendor-ish quickly; reply only if the discussion turns toward product workflow or human review.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card best-bet">
+              <p class="head">Guidance: <code>monitor</code>; reply if the thread asks how non-security teams would actually use this.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-radar">
+      <div class="section-head">
+        <h2>Radar</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head"><a href="https://us.wordcamp.org/2026/tickets/" target="_blank" rel="noreferrer">WordCamp US 2026</a> - Phoenix, August 16-19; tickets are live and refundable until July 24, with Contributor Day, Showcase Day, and main conference days now framed. Use it for hallway conversations around AI, support, agencies, and open-source trust. Tag: <code>attend</code> / <code>monitor</code>.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://make.wordpress.org/core/2026/07/01/summary-dev-chat-july-1-2026/" target="_blank" rel="noreferrer">Make/Core dev chat summary</a> - the July 1 summary says a <code>core-ai</code> update draft could use feedback; this is worth monitoring as a WordPress-native AI governance signal, not a place for a generic product pitch. Tag: <code>monitor</code>.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://odsc.ai/west/call-for-speakers-west/" target="_blank" rel="noreferrer">ODSC AI West CFP</a> - Round Two speaker proposals open July 17 and close August 7; only worth preparing if Robby can make the talk concrete around agentic website workflows, approvals, and client-safe implementation. Tag: <code>speak</code>.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">Podcast check: <a href="https://wptavern.com/" target="_blank" rel="noreferrer">WP Tavern Jukebox</a> has been running a steady AI-in-WordPress arc, including agencies, plugin ethics, and security; Robby already has recent WP Tavern/WP Minute appearances, so the better move is to save a sharper follow-up topic rather than pitch today. Tag: <code>monitor</code>.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    </div>
+<div class="paper-column middle-column">
+    <section class="section section-weather">
+      <div class="section-head">
+        <h2>Weather</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head"><a href="https://forecast.weather.gov/MapClick.php?lat=38.2324&amp;lon=-122.6367" target="_blank" rel="noreferrer">Petaluma NWS</a>: patchy fog before 9 AM, then mostly sunny near 75; Tuesday stays near 74, and Wednesday warms toward 80.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">Microclimates: <a href="https://forecast.weather.gov/MapClick.php?lat=37.4419&amp;lon=-122.1430" target="_blank" rel="noreferrer">Palo Alto</a> is sunny near 76, <a href="https://forecast.weather.gov/MapClick.php?lat=38.7521&amp;lon=-121.2880" target="_blank" rel="noreferrer">Roseville</a> is the inland-heat read near 93, and <a href="https://forecast.weather.gov/MapClick.php?lat=38.9399&amp;lon=-119.9772" target="_blank" rel="noreferrer">South Lake Tahoe</a> is sunny near 74 with no meaningful storm signal today.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://weatherwest.com/archives/43880" target="_blank" rel="noreferrer">Weather West</a> is still more seasonal than near-term: the latest post remains the June 11 strong-to-historic 2026 El Nino outlook, with elevated odds of a very strong event by autumn or early winter.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://weatherwest.disqus.com/latest.rss" target="_blank" rel="noreferrer">Weather West comments</a>: useful morning tidbits were that GFS is trending away from deeper monsoonal moisture for Southern California, and one local observer noted morning stratus clearing by 8:45 with a warming trend and suppressed marine layer into Wednesday/Thursday.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-follow-up-seeds">
+      <div class="section-head">
+        <h2>Follow-Up / Seeds</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">If replying on HN, connect support to AI product design: &quot;AI can summarize a ticket, but it cannot remove the need for evidence, ownership, and a clear escalation path.&quot;</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">Seed: &quot;Support at scale is empathy plus instrumentation. Without the instrumentation, empathy turns into a memory contest.&quot;</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">Seed: &quot;For agentic websites, the product question is not whether the agent is powerful. It is whether every dangerous capability has a visible approval surface.&quot;</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    </div>
+<div class="paper-column right-column">
+    <section class="section section-sports">
+      <div class="section-head">
+        <h2>Sports</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">Athletics - <a href="https://www.mlb.com/athletics/schedule" target="_blank" rel="noreferrer">MLB schedule</a>: off today after losing 9-8 to Miami on Sunday; next game is Tuesday at Detroit, 3:40 PM PDT. Tag: <code>monitor</code>.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">Giants - <a href="https://www.mlb.com/giants/schedule" target="_blank" rel="noreferrer">MLB schedule</a>: Toronto opens a series at Oracle Park tonight at 6:45 PM PDT; San Francisco is coming off a 7-6 loss at Colorado. Tag: <code>watch</code>.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">World Cup - <a href="https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket" target="_blank" rel="noreferrer">ESPN schedule</a> / <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums" target="_blank" rel="noreferrer">FIFA schedule</a>: Round of 16 continues with Portugal-Spain at noon Pacific and USA-Belgium at 5 PM Pacific in Seattle; the U.S. match is the main sports watch. Tag: <code>watch</code>.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">49ers / fantasy - <a href="https://www.49ers.com/news/nfl-announces-49ers-2026-training-camp-dates-joint-practices-titans-chargers" target="_blank" rel="noreferrer">49ers training camp</a>: no source-verified fantasy-relevant injury or depth-chart shift this morning; rookies report July 18, veterans July 25, first practice July 26. Tag: <code>offseason</code>.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">Disc golf - <a href="https://www.pdga.com/tour/events/1041/07" target="_blank" rel="noreferrer">PDGA July events</a>: DGPT Ale Open wrapped yesterday, and Junior Worlds starts Tuesday in Pittsburgh; no must-watch result for Robby this morning. Tag: <code>monitor</code>.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-coverage-note">
+      <div class="section-head">
+        <h2>Coverage Note</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">Searched Hacker News through Algolia plus direct item APIs; both Best Bets include source/API-verified publish time and latest visible comment activity. Reddit JSON and old Reddit RSS were blocked or rate-limited from this environment (<code>403</code>/<code>429</code>), so Reddit was searched through web results but excluded from Best Bets where source timing could not be verified. X/Twitter was searched through web results and one HN-linked X item was visible, but source-visible timing and reply momentum were incomplete, so X was excluded from Best Bets. Weather used NWS point forecasts plus Weather West and the Weather West Disqus RSS feed. Sports used MLB Stats API, MLB pages, ESPN/FIFA World Cup references, 49ers/NFL training-camp sources, and PDGA.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    </div>
+    </section>
+
+    <p class="footer">Daily brief archive: 2026-07-06-morning</p>
+  </main>
+</body>
+</html>
