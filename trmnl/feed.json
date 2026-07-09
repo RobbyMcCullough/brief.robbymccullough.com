@@ -257,5 +257,12 @@
     "review_time": "July 8, 2026 at 5:30 PM PDT.",
     "path": "trmnl/briefs/2026-07-08-evening/",
     "source": "2026-07-08-evening.md"
+  },
+  {
+    "date": "2026-07-09-morning",
+    "title": "Morning Brief - 2026-07-09",
+    "review_time": "July 9, 2026 at 7:31 AM PDT.",
+    "path": "trmnl/briefs/2026-07-09-morning/",
+    "source": "2026-07-09-morning.md"
   }
 ]
