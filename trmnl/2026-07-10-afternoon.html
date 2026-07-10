@@ -11,12 +11,12 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/site-icon-512.png">
   <style>
     :root {
-      --paper: #fdfdfb;
-      --ink: #101010;
-      --muted: #66645f;
-      --soft: #f3f3ef;
-      --rule: #151515;
-      --subtle-rule: #cbcbc6;
+      --paper: #fff;
+      --ink: #000;
+      --muted: #000;
+      --soft: #000;
+      --rule: #000;
+      --subtle-rule: #111;
     }
 
     * { box-sizing: border-box; }
@@ -41,70 +41,70 @@
       flex-direction: column;
       height: 100%;
       min-width: 0;
-      padding: 38px 52px 26px;
+      padding: 42px 56px 30px;
     }
 
     .topbar {
       align-items: end;
       display: flex;
       justify-content: space-between;
-      min-height: 104px;
+      min-height: 122px;
     }
 
     .topbar-overline {
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 750;
-      letter-spacing: 0.1em;
-      margin: 0 0 7px;
+      color: var(--ink);
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: 0.075em;
+      margin: 0 0 10px;
       text-transform: uppercase;
     }
 
     .topbar h1 {
-      font-size: 62px;
-      font-weight: 820;
-      letter-spacing: -0.085em;
+      font-size: 82px;
+      font-weight: 900;
+      letter-spacing: -0.075em;
       line-height: 0.88;
       margin: 0;
     }
 
     .topbar time {
-      color: var(--muted);
-      font-size: 15px;
-      font-weight: 620;
-      letter-spacing: 0.01em;
-      margin-bottom: 5px;
+      color: var(--ink);
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 0.025em;
+      margin-bottom: 8px;
       text-align: right;
     }
 
     .lede {
       display: grid;
-      gap: 26px;
+      gap: 24px;
       grid-template-columns: 1.13fr 0.87fr;
-      margin-top: 27px;
+      margin-top: 30px;
     }
 
     .lede-card {
-      border: 2px solid var(--rule);
-      border-radius: 12px;
-      min-height: 172px;
-      padding: 20px 23px 21px;
+      border: 3px solid var(--rule);
+      border-radius: 7px;
+      min-height: 188px;
+      padding: 22px 26px 23px;
     }
 
     .label {
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 780;
-      letter-spacing: 0.095em;
-      margin: 0 0 11px;
+      color: var(--ink);
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: 0.075em;
+      margin: 0 0 15px;
       text-transform: uppercase;
     }
 
     .lede-text {
-      font-size: 26px;
-      font-weight: 710;
-      letter-spacing: -0.042em;
-      line-height: 1.17;
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.18;
       margin: 0;
     }
 
@@ -112,66 +112,99 @@
       align-items: start;
       display: grid;
       flex: 1;
-      gap: 18px;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      margin-top: 20px;
+      gap: 24px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 24px;
       min-height: 0;
     }
 
     .column {
       display: grid;
-      gap: 16px;
+      gap: 20px;
       min-width: 0;
     }
 
     section {
-      border: 2px solid var(--rule);
-      border-radius: 12px;
+      border: 3px solid var(--rule);
+      border-radius: 7px;
       overflow: hidden;
     }
 
     h2 {
       background: var(--soft);
-      border-bottom: 2px solid var(--rule);
-      font-size: 17px;
-      font-weight: 820;
-      letter-spacing: 0.085em;
+      border-bottom: 3px solid var(--rule);
+      color: #fff;
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 0.07em;
       margin: 0;
-      padding: 14px 17px 13px;
+      padding: 16px 20px 15px;
       text-transform: uppercase;
     }
 
     article {
-      padding: 12px 17px 14px;
+      padding: 16px 20px 18px;
     }
 
-    article + article { border-top: 1px solid var(--subtle-rule); }
+    article + article { border-top: 2px solid var(--subtle-rule); }
 
     .head {
-      font-size: 21px;
-      font-weight: 750;
-      letter-spacing: -0.045em;
-      line-height: 1.13;
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      line-height: 1.14;
       margin: 0;
     }
 
     .body, .detail, .meta {
-      color: #353431;
-      font-size: 17px;
-      font-weight: 520;
-      letter-spacing: -0.018em;
-      line-height: 1.3;
-      margin: 6px 0 0;
+      color: var(--ink);
+      font-size: 22px;
+      font-weight: 650;
+      letter-spacing: -0.012em;
+      line-height: 1.28;
+      margin: 8px 0 0;
+    }
+
+    .terminal-section-sports {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .terminal-section-sports h2 {
+      grid-column: 1 / -1;
+    }
+
+    .terminal-section-sports article {
+      border-top: 2px solid var(--subtle-rule);
+      padding: 16px 18px 18px;
+    }
+
+    .terminal-section-sports article:nth-of-type(1),
+    .terminal-section-sports article:nth-of-type(2) {
+      border-top: none;
+    }
+
+    .terminal-section-sports article:nth-of-type(even) {
+      border-left: 2px solid var(--subtle-rule);
+    }
+
+    .terminal-section-sports .head {
+      font-size: 25px;
+    }
+
+    .terminal-section-sports .body {
+      font-size: 20px;
+      line-height: 1.25;
     }
 
     .footer {
-      border-top: 2px solid var(--subtle-rule);
-      color: var(--muted);
-      font-size: 13px;
-      font-weight: 720;
-      letter-spacing: 0.085em;
-      margin: 16px 0 0;
-      padding-top: 12px;
+      border-top: 3px solid var(--subtle-rule);
+      color: var(--ink);
+      font-size: 17px;
+      font-weight: 900;
+      letter-spacing: 0.07em;
+      margin: 22px 0 0;
+      padding-top: 16px;
       text-align: center;
       text-transform: uppercase;
     }
@@ -201,7 +234,7 @@
 
       <div class="grid">
         <div class="column">
-    <section>
+    <section class="terminal-section terminal-section-world-news">
       <h2>World News</h2>
 
             <article>
@@ -218,24 +251,24 @@
     </section>
 
 
-    <section>
-      <h2>Weather</h2>
+    <section class="terminal-section terminal-section-business-news">
+      <h2>Business News</h2>
 
             <article>
-              <p class="head">California contrast</p>
-              <p class="body">Petaluma and Palo Alto remain comfortable; Sacramento holds the inland heat signal; Tahoe is dry and mild before a possible late-weekend shower.</p>
+              <p class="head">AI maintenance test</p>
+              <p class="body">The useful measure of AI-assisted work is not just speed. A durable change leaves intent, validation, blast radius, and an undo path for the next owner.</p>
             </article>
 
 
             <article>
-              <p class="head">Weather West signal</p>
-              <p class="body">The latest main outlook still focuses on a strong El Nino trajectory. Current discussion separates moisture aloft from actual rain: a trigger still matters.</p>
+              <p class="head">Product trust</p>
+              <p class="body">Automation is easier to trust when it shows what it can affect before it acts and leaves a clear record afterward.</p>
             </article>
 
     </section>
     </div>
 <div class="column">
-    <section>
+    <section class="terminal-section terminal-section-u-s-news">
       <h2>U.S. News</h2>
 
             <article>
@@ -252,7 +285,7 @@
     </section>
 
 
-    <section>
+    <section class="terminal-section terminal-section-sports">
       <h2>Sports</h2>
 
             <article>
@@ -276,23 +309,6 @@
             <article>
               <p class="head">Disc golf</p>
               <p class="body">The Heinola Open begins in Finland and runs through Sunday.</p>
-            </article>
-
-    </section>
-    </div>
-<div class="column">
-    <section>
-      <h2>Business News</h2>
-
-            <article>
-              <p class="head">AI maintenance test</p>
-              <p class="body">The useful measure of AI-assisted work is not just speed. A durable change leaves intent, validation, blast radius, and an undo path for the next owner.</p>
-            </article>
-
-
-            <article>
-              <p class="head">Product trust</p>
-              <p class="body">Automation is easier to trust when it shows what it can affect before it acts and leaves a clear record afterward.</p>
             </article>
 
     </section>
