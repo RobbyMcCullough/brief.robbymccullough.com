@@ -32,100 +32,23 @@
     main {
       width: 1872px;
       height: 1404px;
-      display: grid;
-      grid-template-columns: 304px minmax(0, 1fr);
       overflow: hidden;
       background: var(--paper);
-    }
-
-    .terminal-rail {
-      border-right: 3px solid var(--rule);
-      display: flex;
-      flex-direction: column;
-      padding: 36px 28px 26px;
-    }
-
-    .terminal-brand {
-      display: grid;
-      gap: 4px;
-      letter-spacing: -0.09em;
-      line-height: 0.83;
-    }
-
-    .terminal-brand span {
-      font-size: 43px;
-      font-weight: 780;
-    }
-
-    .terminal-brand strong {
-      font-size: 31px;
-      font-weight: 820;
-    }
-
-    .terminal-kicker {
-      border-bottom: 2px solid var(--rule);
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.09em;
-      line-height: 1.38;
-      margin: 28px 0 25px;
-      padding-bottom: 23px;
-      text-transform: uppercase;
-    }
-
-    .terminal-nav {
-      display: grid;
-      gap: 6px;
-    }
-
-    .terminal-nav p {
-      align-items: center;
-      color: var(--muted);
-      display: flex;
-      font-size: 18px;
-      font-weight: 560;
-      gap: 13px;
-      letter-spacing: -0.02em;
-      margin: 0;
-      padding: 10px 12px;
-    }
-
-    .terminal-nav p::before {
-      border: 2px solid currentColor;
-      border-radius: 50%;
-      content: "";
-      height: 10px;
-      width: 10px;
-    }
-
-    .terminal-nav .active {
-      background: var(--soft);
-      color: var(--ink);
-      font-weight: 760;
-    }
-
-    .terminal-note {
-      border-top: 2px solid var(--subtle-rule);
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.45;
-      margin: auto 0 0;
-      padding-top: 20px;
     }
 
     .terminal-content {
       display: flex;
       flex-direction: column;
+      height: 100%;
       min-width: 0;
-      padding: 32px 42px 24px;
+      padding: 38px 52px 26px;
     }
 
     .topbar {
       align-items: end;
       display: flex;
       justify-content: space-between;
-      min-height: 92px;
+      min-height: 104px;
     }
 
     .topbar-overline {
@@ -138,7 +61,7 @@
     }
 
     .topbar h1 {
-      font-size: 56px;
+      font-size: 62px;
       font-weight: 820;
       letter-spacing: -0.085em;
       line-height: 0.88;
@@ -158,7 +81,7 @@
       display: grid;
       gap: 26px;
       grid-template-columns: 1.13fr 0.87fr;
-      margin-top: 23px;
+      margin-top: 27px;
     }
 
     .lede-card {
@@ -256,17 +179,6 @@
 </head>
 <body>
   <main>
-    <aside class="terminal-rail" aria-label="Brief overview">
-      <div class="terminal-brand"><span>Brief</span><strong>Desk</strong></div>
-      <p class="terminal-kicker">Personal brand<br>display edition</p>
-      <div class="terminal-nav" aria-label="Brief topics">
-        <p class="active">Today</p>
-        <p>Weather</p>
-        <p>News</p>
-        <p>Sports</p>
-      </div>
-      <p class="terminal-note">A quiet, link-free briefing for the e-ink display.</p>
-    </aside>
     <div class="terminal-content">
       <header class="topbar">
         <div>

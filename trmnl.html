@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=1872, initial-scale=1">
-  <title>Afternoon Brief - 2026-07-10</title>
+  <title>Morning Brief - 2026-07-10</title>
 
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -32,100 +32,23 @@
     main {
       width: 1872px;
       height: 1404px;
-      display: grid;
-      grid-template-columns: 304px minmax(0, 1fr);
       overflow: hidden;
       background: var(--paper);
-    }
-
-    .terminal-rail {
-      border-right: 3px solid var(--rule);
-      display: flex;
-      flex-direction: column;
-      padding: 36px 28px 26px;
-    }
-
-    .terminal-brand {
-      display: grid;
-      gap: 4px;
-      letter-spacing: -0.09em;
-      line-height: 0.83;
-    }
-
-    .terminal-brand span {
-      font-size: 43px;
-      font-weight: 780;
-    }
-
-    .terminal-brand strong {
-      font-size: 31px;
-      font-weight: 820;
-    }
-
-    .terminal-kicker {
-      border-bottom: 2px solid var(--rule);
-      color: var(--muted);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.09em;
-      line-height: 1.38;
-      margin: 28px 0 25px;
-      padding-bottom: 23px;
-      text-transform: uppercase;
-    }
-
-    .terminal-nav {
-      display: grid;
-      gap: 6px;
-    }
-
-    .terminal-nav p {
-      align-items: center;
-      color: var(--muted);
-      display: flex;
-      font-size: 18px;
-      font-weight: 560;
-      gap: 13px;
-      letter-spacing: -0.02em;
-      margin: 0;
-      padding: 10px 12px;
-    }
-
-    .terminal-nav p::before {
-      border: 2px solid currentColor;
-      border-radius: 50%;
-      content: "";
-      height: 10px;
-      width: 10px;
-    }
-
-    .terminal-nav .active {
-      background: var(--soft);
-      color: var(--ink);
-      font-weight: 760;
-    }
-
-    .terminal-note {
-      border-top: 2px solid var(--subtle-rule);
-      color: var(--muted);
-      font-size: 14px;
-      line-height: 1.45;
-      margin: auto 0 0;
-      padding-top: 20px;
     }
 
     .terminal-content {
       display: flex;
       flex-direction: column;
+      height: 100%;
       min-width: 0;
-      padding: 32px 42px 24px;
+      padding: 38px 52px 26px;
     }
 
     .topbar {
       align-items: end;
       display: flex;
       justify-content: space-between;
-      min-height: 92px;
+      min-height: 104px;
     }
 
     .topbar-overline {
@@ -138,7 +61,7 @@
     }
 
     .topbar h1 {
-      font-size: 56px;
+      font-size: 62px;
       font-weight: 820;
       letter-spacing: -0.085em;
       line-height: 0.88;
@@ -158,7 +81,7 @@
       display: grid;
       gap: 26px;
       grid-template-columns: 1.13fr 0.87fr;
-      margin-top: 23px;
+      margin-top: 27px;
     }
 
     .lede-card {
@@ -256,34 +179,23 @@
 </head>
 <body>
   <main>
-    <aside class="terminal-rail" aria-label="Brief overview">
-      <div class="terminal-brand"><span>Brief</span><strong>Desk</strong></div>
-      <p class="terminal-kicker">Personal brand<br>display edition</p>
-      <div class="terminal-nav" aria-label="Brief topics">
-        <p class="active">Today</p>
-        <p>Weather</p>
-        <p>News</p>
-        <p>Sports</p>
-      </div>
-      <p class="terminal-note">A quiet, link-free briefing for the e-ink display.</p>
-    </aside>
     <div class="terminal-content">
       <header class="topbar">
         <div>
           <p class="topbar-overline">Robby McCullough · personal brand desk</p>
-          <h1>Afternoon Brief</h1>
+          <h1>Morning Brief</h1>
         </div>
-        <time>July 10, 2026 at 12:31 PM PDT.</time>
+        <time>July 10, 2026 at 7:32 AM PDT.</time>
       </header>
 
       <section class="lede">
         <article class="lede-card">
           <p class="label">Top Line</p>
-          <p class="lede-text">Petaluma is mild this afternoon, Spain and Belgium meet in the Los Angeles World Cup quarter-final, Bay Area baseball is on tonight, and the day’s web-operations signal is simple: destructive automation needs a clear scope and undo path.</p>
+          <p class="lede-text">Petaluma starts clear and mild, the World Cup quarterfinals continue in Los Angeles, local baseball has both Bay Area teams in action tonight, and the useful AI-web signal is context before automation.</p>
         </article>
         <article class="lede-card">
           <p class="label">Weather</p>
-          <p class="lede-text">Petaluma reaches about 79 today before a mid-80s weekend. Palo Alto stays upper-70s, Sacramento reaches the low 90s today and mid-90s Saturday, and Tahoe stays sunny with a slight shower chance late Sunday.</p>
+          <p class="lede-text">Petaluma reaches about 79 today, then warms into the mid-80s this weekend. Palo Alto stays upper-70s, Sacramento runs hotter near 91 today and 96 Saturday, and Tahoe is sunny with breezy southwest gusts.</p>
         </article>
       </section>
 
@@ -293,31 +205,31 @@
       <h2>World News</h2>
 
             <article>
-              <p class="head">World Cup quarter-final</p>
-              <p class="body">Spain and Belgium play in Los Angeles today, with the winner advancing to Tuesday’s Dallas semi-final.</p>
+              <p class="head">World Cup quarterfinal</p>
+              <p class="body">Spain and Belgium play at Los Angeles Stadium at noon Pacific, keeping the tournament in California for the day&#x27;s marquee match.</p>
             </article>
 
 
             <article>
-              <p class="head">Western heat pattern</p>
-              <p class="body">Mid-July heat risk is growing across inland California and much of the West, while the immediate coast remains comparatively moderate.</p>
+              <p class="head">Summer weather pattern</p>
+              <p class="body">Weather West discussion is watching monsoon moisture, model disagreement, and inland heat rather than a major immediate Bay Area change.</p>
             </article>
 
     </section>
 
 
     <section>
-      <h2>Weather</h2>
+      <h2>Stock Market News</h2>
 
             <article>
-              <p class="head">California contrast</p>
-              <p class="body">Petaluma and Palo Alto remain comfortable; Sacramento holds the inland heat signal; Tahoe is dry and mild before a possible late-weekend shower.</p>
+              <p class="head">Market tone</p>
+              <p class="body">U.S. stocks and oil were relatively steady after a volatile stretch, with attention turning toward earnings season and AI-linked market expectations.</p>
             </article>
 
 
             <article>
-              <p class="head">Weather West signal</p>
-              <p class="body">The latest main outlook still focuses on a strong El Nino trajectory. Current discussion separates moisture aloft from actual rain: a trigger still matters.</p>
+              <p class="head">Business signal</p>
+              <p class="body">AI enthusiasm remains tied to governance and adoption quality, not just model capability.</p>
             </article>
 
     </section>
@@ -327,14 +239,48 @@
       <h2>U.S. News</h2>
 
             <article>
-              <p class="head">Heat alerts</p>
-              <p class="body">New heat watches and advisories cover inland and Southern California zones. The local North Bay forecast stays below the major-heat threshold.</p>
+              <p class="head">Heat risk</p>
+              <p class="body">California alerts are concentrated away from the Bay Area, with extreme heat and heat advisories in desert and inland Southern California zones.</p>
             </article>
 
 
             <article>
-              <p class="head">Website operations</p>
-              <p class="body">A live WordPress incident is a reminder that automated cleanup needs visible logs, defined authority, and a safe rollback before it touches customer accounts.</p>
+              <p class="head">Tech and public forums</p>
+              <p class="body">WordPress communities are still debating how AI fits real site work: useful for bounded tasks, weaker when business context and maintenance judgment are missing.</p>
+            </article>
+
+    </section>
+
+
+    <section>
+      <h2>Weather</h2>
+
+            <article>
+              <p class="head">Local spread</p>
+              <p class="body">Petaluma and Palo Alto are comfortable; Sacramento carries the warmer inland read; Tahoe stays dry and breezy.</p>
+            </article>
+
+
+            <article>
+              <p class="head">Weather West signal</p>
+              <p class="body">The latest main post remains the June El Nino outlook. Fresh comments point to possible wetter ensemble movement, warmer inland nights, and early monsoon moisture signals.</p>
+            </article>
+
+    </section>
+    </div>
+<div class="column">
+    <section>
+      <h2>Business News</h2>
+
+            <article>
+              <p class="head">AI workflow</p>
+              <p class="body">The practical operator signal is context management: clear project notes, scoped tasks, acceptance criteria, review, and rollback make AI output more useful.</p>
+            </article>
+
+
+            <article>
+              <p class="head">Web product design</p>
+              <p class="body">The morning&#x27;s tooling theme is invisibility: the best software gives users leverage without forcing them to manage the tool itself.</p>
             </article>
 
     </section>
@@ -345,49 +291,32 @@
 
             <article>
               <p class="head">MLB</p>
-              <p class="body">The Athletics play the White Sox at 4:40 PM Pacific. The Giants host the Rockies at 7:15 PM after an 8-2 win Thursday.</p>
+              <p class="body">The Athletics open at the White Sox at 4:40 PM Pacific. The Giants host the Rockies at 7:15 PM after an 8-2 win last night.</p>
             </article>
 
 
             <article>
               <p class="head">World Cup</p>
-              <p class="body">Spain versus Belgium is the Friday quarter-final in Los Angeles.</p>
+              <p class="body">Spain versus Belgium is the key Friday quarterfinal, with more knockout soccer stacked into the weekend.</p>
             </article>
 
 
             <article>
-              <p class="head">Football</p>
-              <p class="body">The 49ers remain in the pre-camp window; their first preseason game is August 13 against Tennessee.</p>
+              <p class="head">49ers</p>
+              <p class="body">The team is still in the quiet pre-camp window. The next game marker is preseason Week 1 against Tennessee on August 13.</p>
             </article>
 
 
             <article>
               <p class="head">Disc golf</p>
-              <p class="body">The Heinola Open begins in Finland and runs through Sunday.</p>
-            </article>
-
-    </section>
-    </div>
-<div class="column">
-    <section>
-      <h2>Business News</h2>
-
-            <article>
-              <p class="head">AI maintenance test</p>
-              <p class="body">The useful measure of AI-assisted work is not just speed. A durable change leaves intent, validation, blast radius, and an undo path for the next owner.</p>
-            </article>
-
-
-            <article>
-              <p class="head">Product trust</p>
-              <p class="body">Automation is easier to trust when it shows what it can affect before it acts and leaves a clear record afterward.</p>
+              <p class="body">Heinola Open starts today in Finland; the U.S. Women&#x27;s Disc Golf Championship follows next week in Salt Lake City.</p>
             </article>
 
     </section>
     </div>
       </div>
 
-      <p class="footer">Afternoon Brief - 2026-07-10 · latest display edition</p>
+      <p class="footer">Morning Brief - 2026-07-10 · latest display edition</p>
     </div>
   </main>
 </body>
