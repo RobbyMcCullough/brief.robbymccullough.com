@@ -11,315 +11,395 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/site-icon-512.png">
   <style>
     :root {
-      --paper: #f8f8f3;
-      --ink: #111;
-      --muted: #222;
-      --rule: #222;
-      --rule-strong: #111;
+      --paper: #fdfdfb;
+      --ink: #101010;
+      --muted: #66645f;
+      --soft: #f3f3ef;
+      --rule: #151515;
+      --subtle-rule: #cbcbc6;
     }
 
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: "Avenir Next", "Helvetica Neue", sans-serif;
       -webkit-font-smoothing: antialiased;
     }
 
     main {
       width: 1872px;
       height: 1404px;
-      position: relative;
-      padding: 26px 40px 24px;
+      display: grid;
+      grid-template-columns: 304px minmax(0, 1fr);
       overflow: hidden;
       background: var(--paper);
     }
 
-    .topbar {
+    .terminal-rail {
+      border-right: 3px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      padding: 36px 28px 26px;
+    }
+
+    .terminal-brand {
       display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: end;
-      gap: 24px;
-      border-top: 7px solid var(--rule-strong);
-      border-bottom: 3px solid var(--rule-strong);
-      padding: 8px 0 10px;
+      gap: 4px;
+      letter-spacing: -0.09em;
+      line-height: 0.83;
+    }
+
+    .terminal-brand span {
+      font-size: 43px;
+      font-weight: 780;
+    }
+
+    .terminal-brand strong {
+      font-size: 31px;
+      font-weight: 820;
+    }
+
+    .terminal-kicker {
+      border-bottom: 2px solid var(--rule);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      line-height: 1.38;
+      margin: 28px 0 25px;
+      padding-bottom: 23px;
       text-transform: uppercase;
-      letter-spacing: 0.07em;
-      font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
-      font-size: 30px;
-      font-weight: 800;
     }
 
-    .topbar span:first-child {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 88px;
-      line-height: 0.86;
-      letter-spacing: 0;
-      text-transform: none;
+    .terminal-nav {
+      display: grid;
+      gap: 6px;
     }
 
-    .topbar span:last-child {
+    .terminal-nav p {
+      align-items: center;
+      color: var(--muted);
+      display: flex;
+      font-size: 18px;
+      font-weight: 560;
+      gap: 13px;
+      letter-spacing: -0.02em;
+      margin: 0;
+      padding: 10px 12px;
+    }
+
+    .terminal-nav p::before {
+      border: 2px solid currentColor;
+      border-radius: 50%;
+      content: "";
+      height: 10px;
+      width: 10px;
+    }
+
+    .terminal-nav .active {
+      background: var(--soft);
+      color: var(--ink);
+      font-weight: 760;
+    }
+
+    .terminal-note {
+      border-top: 2px solid var(--subtle-rule);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+      margin: auto 0 0;
+      padding-top: 20px;
+    }
+
+    .terminal-content {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: 32px 42px 24px;
+    }
+
+    .topbar {
+      align-items: end;
+      display: flex;
+      justify-content: space-between;
+      min-height: 92px;
+    }
+
+    .topbar-overline {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 750;
+      letter-spacing: 0.1em;
+      margin: 0 0 7px;
+      text-transform: uppercase;
+    }
+
+    .topbar h1 {
+      font-size: 56px;
+      font-weight: 820;
+      letter-spacing: -0.085em;
+      line-height: 0.88;
+      margin: 0;
+    }
+
+    .topbar time {
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 620;
+      letter-spacing: 0.01em;
+      margin-bottom: 5px;
       text-align: right;
-      align-self: center;
     }
 
     .lede {
       display: grid;
-      grid-template-columns: 1.12fr 0.88fr;
-      gap: 30px;
-      padding: 16px 0 18px;
-      border-bottom: 7px double var(--rule-strong);
+      gap: 26px;
+      grid-template-columns: 1.13fr 0.87fr;
+      margin-top: 23px;
     }
 
     .lede-card {
-      min-height: 138px;
-      border-right: 2px solid var(--rule);
-      padding-right: 30px;
-    }
-
-    .lede-card:last-child {
-      border-right: none;
-      padding-right: 0;
+      border: 2px solid var(--rule);
+      border-radius: 12px;
+      min-height: 172px;
+      padding: 20px 23px 21px;
     }
 
     .label {
-      margin: 0 0 10px;
-      color: var(--ink);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 780;
+      letter-spacing: 0.095em;
+      margin: 0 0 11px;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
-      font-size: 28px;
-      font-weight: 800;
     }
 
     .lede-text {
+      font-size: 26px;
+      font-weight: 710;
+      letter-spacing: -0.042em;
+      line-height: 1.17;
       margin: 0;
-      font-size: 41px;
-      line-height: 1.13;
-      font-weight: 700;
-      text-wrap: balance;
     }
 
     .grid {
+      align-items: start;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-      padding-top: 18px;
+      flex: 1;
+      gap: 18px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 20px;
+      min-height: 0;
     }
 
     .column {
+      display: grid;
+      gap: 16px;
       min-width: 0;
-      padding-right: 28px;
-    }
-
-    .column + .column {
-      border-left: 2px solid var(--rule);
-      padding-left: 28px;
     }
 
     section {
-      border-top: 6px double var(--rule-strong);
-      padding-top: 10px;
-      margin-bottom: 20px;
-      break-inside: avoid;
+      border: 2px solid var(--rule);
+      border-radius: 12px;
+      overflow: hidden;
     }
 
     h2 {
-      margin: 0 0 8px;
-      font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
-      font-size: 32px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      background: var(--soft);
       border-bottom: 2px solid var(--rule);
-      padding-bottom: 6px;
-      font-weight: 800;
+      font-size: 17px;
+      font-weight: 820;
+      letter-spacing: 0.085em;
+      margin: 0;
+      padding: 14px 17px 13px;
+      text-transform: uppercase;
     }
 
     article {
-      border-top: 2px solid var(--rule);
-      padding-top: 8px;
-      margin-top: 8px;
+      padding: 12px 17px 14px;
     }
 
-    article:first-of-type {
-      border-top: none;
-      padding-top: 0;
-      margin-top: 0;
-    }
+    article + article { border-top: 1px solid var(--subtle-rule); }
 
     .head {
+      font-size: 21px;
+      font-weight: 750;
+      letter-spacing: -0.045em;
+      line-height: 1.13;
       margin: 0;
-      font-size: 35px;
-      line-height: 1.12;
-      font-weight: 700;
     }
 
     .body, .detail, .meta {
-      margin: 7px 0 0;
-      font-size: 29px;
-      line-height: 1.2;
-      font-weight: 600;
-    }
-
-    .meta {
-      color: var(--ink);
-      font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      font-size: 24px;
-      line-height: 1.15;
-      font-weight: 800;
+      color: #353431;
+      font-size: 17px;
+      font-weight: 520;
+      letter-spacing: -0.018em;
+      line-height: 1.3;
+      margin: 6px 0 0;
     }
 
     .footer {
-      position: absolute;
-      left: 40px;
-      right: 40px;
-      bottom: 16px;
-      margin: 0;
-      padding-top: 10px;
-      border-top: 2px solid var(--rule);
-      color: var(--ink);
+      border-top: 2px solid var(--subtle-rule);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 720;
+      letter-spacing: 0.085em;
+      margin: 16px 0 0;
+      padding-top: 12px;
       text-align: center;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
-      font-size: 23px;
-      font-weight: 800;
     }
     </style>
 </head>
 <body>
   <main>
-    <header class="topbar">
-      <span>Morning Brief</span>
-      <span>June 30, 2026 at 7:31 AM PDT.</span>
-    </header>
+    <aside class="terminal-rail" aria-label="Brief overview">
+      <div class="terminal-brand"><span>Brief</span><strong>Desk</strong></div>
+      <p class="terminal-kicker">Personal brand<br>display edition</p>
+      <div class="terminal-nav" aria-label="Brief topics">
+        <p class="active">Today</p>
+        <p>Weather</p>
+        <p>News</p>
+        <p>Sports</p>
+      </div>
+      <p class="terminal-note">A quiet, link-free briefing for the e-ink display.</p>
+    </aside>
+    <div class="terminal-content">
+      <header class="topbar">
+        <div>
+          <p class="topbar-overline">Robby McCullough · personal brand desk</p>
+          <h1>Morning Brief</h1>
+        </div>
+        <time>June 30, 2026 at 7:31 AM PDT.</time>
+      </header>
 
-    <section class="lede">
-      <article class="lede-card">
-        <p class="label">Top Line</p>
-        <p class="lede-text">Mild Petaluma sun, a hot Sacramento Valley afternoon, AI engineers gathering in San Francisco, and three World Cup matches carrying the sports window.</p>
-      </article>
-      <article class="lede-card">
-        <p class="label">Weather</p>
-        <p class="lede-text">Petaluma is sunny near 82, Palo Alto near 79, Roseville hot near 93, and Tahoe clear and cool near 66.</p>
-      </article>
-    </section>
+      <section class="lede">
+        <article class="lede-card">
+          <p class="label">Top Line</p>
+          <p class="lede-text">Mild Petaluma sun, a hot Sacramento Valley afternoon, AI engineers gathering in San Francisco, and three World Cup matches carrying the sports window.</p>
+        </article>
+        <article class="lede-card">
+          <p class="label">Weather</p>
+          <p class="lede-text">Petaluma is sunny near 82, Palo Alto near 79, Roseville hot near 93, and Tahoe clear and cool near 66.</p>
+        </article>
+      </section>
 
-    <div class="grid">
-      <div class="column">
+      <div class="grid">
+        <div class="column">
     <section>
       <h2>World News</h2>
-      
+
             <article>
               <p class="head">Iran conflict accelerates energy pivots</p>
               <p class="body">NPR&#x27;s morning world feed frames the Iran war as another pressure point pushing governments and companies toward renewable-energy resilience.</p>
             </article>
-            
+
 
             <article>
               <p class="head">Venezuela quake aftermath widens</p>
               <p class="body">NPR reports that Venezuelans deported from the U.S. were killed hours later in powerful quakes, adding a human-rights and disaster-response dimension to today&#x27;s world news.</p>
             </article>
-            
+
     </section>
-    
+
 
     <section>
-      <h2>Business News</h2>
-      
-            <article>
-              <p class="head">AI layoffs debate stays live</p>
-              <p class="body">NPR&#x27;s business feed features a computer scientist arguing that mass layoffs blamed on AI may be a convenient excuse, not a clean technology inevitability.</p>
-            </article>
-            
+      <h2>Stock Market News</h2>
 
             <article>
-              <p class="head">WordPress marketing conversation is current</p>
-              <p class="body">The WP Minute&#x27;s morning episode is about self-promotion, AI, and business development in the WordPress agency world.</p>
+              <p class="head">Growth tone is positive early</p>
+              <p class="body">Around the morning check, the S&amp;P 500 was up about 0.5% and Nasdaq about 1.1%, while Bitcoin was down about 2.1%.</p>
             </article>
-            
-    </section>
-    
 
-    <section>
-      <h2>Weather</h2>
-      
-            <article>
-              <p class="head">Local spread</p>
-              <p class="body">Petaluma is comfortable and sunny, Palo Alto stays mild, Roseville carries the inland heat, and Tahoe remains clear with a cool mountain day.</p>
-            </article>
-            
-
-            <article>
-              <p class="head">Weather West signal</p>
-              <p class="body">The standing post remains the strong-to-historic 2026 El Nino outlook; the freshest useful comments point to odd late-June Sierra convection, a Mammoth dusting, and mixed snow-versus-precip totals near Tahoe.</p>
-            </article>
-            
     </section>
     </div>
 <div class="column">
     <section>
       <h2>U.S. News</h2>
-      
+
             <article>
               <p class="head">Supreme Court campaign-finance ruling lands</p>
               <p class="body">NPR reports that the Supreme Court struck down limits on political party spending, a major election-law development heading into the next cycle.</p>
             </article>
-            
+
 
             <article>
               <p class="head">Supreme Court upholds transgender-athlete bans</p>
               <p class="body">The ruling keeps state bans on transgender athletes in women&#x27;s and girls&#x27; sports in place, making it one of the morning&#x27;s highest-impact domestic stories.</p>
             </article>
-            
+
     </section>
-    
+
 
     <section>
-      <h2>Stock Market News</h2>
-      
+      <h2>Weather</h2>
+
             <article>
-              <p class="head">Growth tone is positive early</p>
-              <p class="body">Around the morning check, the S&amp;P 500 was up about 0.5% and Nasdaq about 1.1%, while Bitcoin was down about 2.1%.</p>
+              <p class="head">Local spread</p>
+              <p class="body">Petaluma is comfortable and sunny, Palo Alto stays mild, Roseville carries the inland heat, and Tahoe remains clear with a cool mountain day.</p>
             </article>
-            
+
+
+            <article>
+              <p class="head">Weather West signal</p>
+              <p class="body">The standing post remains the strong-to-historic 2026 El Nino outlook; the freshest useful comments point to odd late-June Sierra convection, a Mammoth dusting, and mixed snow-versus-precip totals near Tahoe.</p>
+            </article>
+
     </section>
-    
+    </div>
+<div class="column">
+    <section>
+      <h2>Business News</h2>
+
+            <article>
+              <p class="head">AI layoffs debate stays live</p>
+              <p class="body">NPR&#x27;s business feed features a computer scientist arguing that mass layoffs blamed on AI may be a convenient excuse, not a clean technology inevitability.</p>
+            </article>
+
+
+            <article>
+              <p class="head">WordPress marketing conversation is current</p>
+              <p class="body">The WP Minute&#x27;s morning episode is about self-promotion, AI, and business development in the WordPress agency world.</p>
+            </article>
+
+    </section>
+
 
     <section>
       <h2>Sports</h2>
-      
+
             <article>
               <p class="head">Athletics</p>
               <p class="body">The A&#x27;s lost 9-4 to the Dodgers and host Los Angeles again tonight at 6:40 PM Pacific.</p>
             </article>
-            
+
 
             <article>
               <p class="head">Giants</p>
               <p class="body">The Giants lost 5-4 at Arizona and play the Diamondbacks again tonight at 6:40 PM Pacific.</p>
             </article>
-            
+
 
             <article>
               <p class="head">World Cup</p>
               <p class="body">Norway-Ivory Coast, Sweden-France, and Ecuador-Mexico are today&#x27;s main watch windows.</p>
             </article>
-            
+
 
             <article>
               <p class="head">49ers</p>
               <p class="body">Still quiet before camp; no meaningful fantasy signal this morning.</p>
             </article>
-            
+
     </section>
     </div>
-    </div>
+      </div>
 
-    <p class="footer">Morning Brief - 2026-06-30 · latest display edition</p>
+      <p class="footer">Morning Brief - 2026-06-30 · latest display edition</p>
+    </div>
   </main>
 </body>
 </html>

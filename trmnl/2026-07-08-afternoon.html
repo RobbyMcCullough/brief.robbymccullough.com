@@ -11,303 +11,383 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/site-icon-512.png">
   <style>
     :root {
-      --paper: #f8f8f3;
-      --ink: #111;
-      --muted: #222;
-      --rule: #222;
-      --rule-strong: #111;
+      --paper: #fdfdfb;
+      --ink: #101010;
+      --muted: #66645f;
+      --soft: #f3f3ef;
+      --rule: #151515;
+      --subtle-rule: #cbcbc6;
     }
 
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       background: var(--paper);
       color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: "Avenir Next", "Helvetica Neue", sans-serif;
       -webkit-font-smoothing: antialiased;
     }
 
     main {
       width: 1872px;
       height: 1404px;
-      position: relative;
-      padding: 26px 40px 24px;
+      display: grid;
+      grid-template-columns: 304px minmax(0, 1fr);
       overflow: hidden;
       background: var(--paper);
     }
 
-    .topbar {
+    .terminal-rail {
+      border-right: 3px solid var(--rule);
+      display: flex;
+      flex-direction: column;
+      padding: 36px 28px 26px;
+    }
+
+    .terminal-brand {
       display: grid;
-      grid-template-columns: 1fr auto;
-      align-items: end;
-      gap: 24px;
-      border-top: 7px solid var(--rule-strong);
-      border-bottom: 3px solid var(--rule-strong);
-      padding: 8px 0 10px;
+      gap: 4px;
+      letter-spacing: -0.09em;
+      line-height: 0.83;
+    }
+
+    .terminal-brand span {
+      font-size: 43px;
+      font-weight: 780;
+    }
+
+    .terminal-brand strong {
+      font-size: 31px;
+      font-weight: 820;
+    }
+
+    .terminal-kicker {
+      border-bottom: 2px solid var(--rule);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.09em;
+      line-height: 1.38;
+      margin: 28px 0 25px;
+      padding-bottom: 23px;
       text-transform: uppercase;
-      letter-spacing: 0.07em;
-      font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
-      font-size: 30px;
-      font-weight: 800;
     }
 
-    .topbar span:first-child {
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: 88px;
-      line-height: 0.86;
-      letter-spacing: 0;
-      text-transform: none;
+    .terminal-nav {
+      display: grid;
+      gap: 6px;
     }
 
-    .topbar span:last-child {
+    .terminal-nav p {
+      align-items: center;
+      color: var(--muted);
+      display: flex;
+      font-size: 18px;
+      font-weight: 560;
+      gap: 13px;
+      letter-spacing: -0.02em;
+      margin: 0;
+      padding: 10px 12px;
+    }
+
+    .terminal-nav p::before {
+      border: 2px solid currentColor;
+      border-radius: 50%;
+      content: "";
+      height: 10px;
+      width: 10px;
+    }
+
+    .terminal-nav .active {
+      background: var(--soft);
+      color: var(--ink);
+      font-weight: 760;
+    }
+
+    .terminal-note {
+      border-top: 2px solid var(--subtle-rule);
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+      margin: auto 0 0;
+      padding-top: 20px;
+    }
+
+    .terminal-content {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: 32px 42px 24px;
+    }
+
+    .topbar {
+      align-items: end;
+      display: flex;
+      justify-content: space-between;
+      min-height: 92px;
+    }
+
+    .topbar-overline {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 750;
+      letter-spacing: 0.1em;
+      margin: 0 0 7px;
+      text-transform: uppercase;
+    }
+
+    .topbar h1 {
+      font-size: 56px;
+      font-weight: 820;
+      letter-spacing: -0.085em;
+      line-height: 0.88;
+      margin: 0;
+    }
+
+    .topbar time {
+      color: var(--muted);
+      font-size: 15px;
+      font-weight: 620;
+      letter-spacing: 0.01em;
+      margin-bottom: 5px;
       text-align: right;
-      align-self: center;
     }
 
     .lede {
       display: grid;
-      grid-template-columns: 1.12fr 0.88fr;
-      gap: 30px;
-      padding: 16px 0 18px;
-      border-bottom: 7px double var(--rule-strong);
+      gap: 26px;
+      grid-template-columns: 1.13fr 0.87fr;
+      margin-top: 23px;
     }
 
     .lede-card {
-      min-height: 138px;
-      border-right: 2px solid var(--rule);
-      padding-right: 30px;
-    }
-
-    .lede-card:last-child {
-      border-right: none;
-      padding-right: 0;
+      border: 2px solid var(--rule);
+      border-radius: 12px;
+      min-height: 172px;
+      padding: 20px 23px 21px;
     }
 
     .label {
-      margin: 0 0 10px;
-      color: var(--ink);
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 780;
+      letter-spacing: 0.095em;
+      margin: 0 0 11px;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
-      font-size: 28px;
-      font-weight: 800;
     }
 
     .lede-text {
+      font-size: 26px;
+      font-weight: 710;
+      letter-spacing: -0.042em;
+      line-height: 1.17;
       margin: 0;
-      font-size: 41px;
-      line-height: 1.13;
-      font-weight: 700;
-      text-wrap: balance;
     }
 
     .grid {
+      align-items: start;
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-      padding-top: 18px;
+      flex: 1;
+      gap: 18px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 20px;
+      min-height: 0;
     }
 
     .column {
+      display: grid;
+      gap: 16px;
       min-width: 0;
-      padding-right: 28px;
-    }
-
-    .column + .column {
-      border-left: 2px solid var(--rule);
-      padding-left: 28px;
     }
 
     section {
-      border-top: 6px double var(--rule-strong);
-      padding-top: 10px;
-      margin-bottom: 20px;
-      break-inside: avoid;
+      border: 2px solid var(--rule);
+      border-radius: 12px;
+      overflow: hidden;
     }
 
     h2 {
-      margin: 0 0 8px;
-      font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
-      font-size: 32px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
+      background: var(--soft);
       border-bottom: 2px solid var(--rule);
-      padding-bottom: 6px;
-      font-weight: 800;
+      font-size: 17px;
+      font-weight: 820;
+      letter-spacing: 0.085em;
+      margin: 0;
+      padding: 14px 17px 13px;
+      text-transform: uppercase;
     }
 
     article {
-      border-top: 2px solid var(--rule);
-      padding-top: 8px;
-      margin-top: 8px;
+      padding: 12px 17px 14px;
     }
 
-    article:first-of-type {
-      border-top: none;
-      padding-top: 0;
-      margin-top: 0;
-    }
+    article + article { border-top: 1px solid var(--subtle-rule); }
 
     .head {
+      font-size: 21px;
+      font-weight: 750;
+      letter-spacing: -0.045em;
+      line-height: 1.13;
       margin: 0;
-      font-size: 35px;
-      line-height: 1.12;
-      font-weight: 700;
     }
 
     .body, .detail, .meta {
-      margin: 7px 0 0;
-      font-size: 29px;
-      line-height: 1.2;
-      font-weight: 600;
-    }
-
-    .meta {
-      color: var(--ink);
-      font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      font-size: 24px;
-      line-height: 1.15;
-      font-weight: 800;
+      color: #353431;
+      font-size: 17px;
+      font-weight: 520;
+      letter-spacing: -0.018em;
+      line-height: 1.3;
+      margin: 6px 0 0;
     }
 
     .footer {
-      position: absolute;
-      left: 40px;
-      right: 40px;
-      bottom: 16px;
-      margin: 0;
-      padding-top: 10px;
-      border-top: 2px solid var(--rule);
-      color: var(--ink);
+      border-top: 2px solid var(--subtle-rule);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 720;
+      letter-spacing: 0.085em;
+      margin: 16px 0 0;
+      padding-top: 12px;
       text-align: center;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-family: "Arial Narrow", "Helvetica Neue Condensed", Arial, sans-serif;
-      font-size: 23px;
-      font-weight: 800;
     }
     </style>
 </head>
 <body>
   <main>
-    <header class="topbar">
-      <span>Afternoon Brief</span>
-      <span>July 8, 2026 at 12:45 PM PDT.</span>
-    </header>
+    <aside class="terminal-rail" aria-label="Brief overview">
+      <div class="terminal-brand"><span>Brief</span><strong>Desk</strong></div>
+      <p class="terminal-kicker">Personal brand<br>display edition</p>
+      <div class="terminal-nav" aria-label="Brief topics">
+        <p class="active">Today</p>
+        <p>Weather</p>
+        <p>News</p>
+        <p>Sports</p>
+      </div>
+      <p class="terminal-note">A quiet, link-free briefing for the e-ink display.</p>
+    </aside>
+    <div class="terminal-content">
+      <header class="topbar">
+        <div>
+          <p class="topbar-overline">Robby McCullough · personal brand desk</p>
+          <h1>Afternoon Brief</h1>
+        </div>
+        <time>July 8, 2026 at 12:45 PM PDT.</time>
+      </header>
 
-    <section class="lede">
-      <article class="lede-card">
-        <p class="label">Top Line</p>
-        <p class="lede-text">A warm but manageable North Bay afternoon, with markets and oil reacting to renewed Iran tension.</p>
-      </article>
-      <article class="lede-card">
-        <p class="label">Weather</p>
-        <p class="lede-text">Petaluma is sunny near 78, Palo Alto stays mid-70s, Roseville heats into the 90s, and Tahoe remains clear in the mid-70s.</p>
-      </article>
-    </section>
+      <section class="lede">
+        <article class="lede-card">
+          <p class="label">Top Line</p>
+          <p class="lede-text">A warm but manageable North Bay afternoon, with markets and oil reacting to renewed Iran tension.</p>
+        </article>
+        <article class="lede-card">
+          <p class="label">Weather</p>
+          <p class="lede-text">Petaluma is sunny near 78, Palo Alto stays mid-70s, Roseville heats into the 90s, and Tahoe remains clear in the mid-70s.</p>
+        </article>
+      </section>
 
-    <div class="grid">
-      <div class="column">
+      <div class="grid">
+        <div class="column">
     <section>
       <h2>World News</h2>
-      
+
             <article>
               <p class="head">Iran ceasefire strain rattles markets</p>
               <p class="body">U.S.-Iran tensions rose again after attacks around the Strait of Hormuz, lifting oil prices and weighing on stocks.</p>
             </article>
-            
+
 
             <article>
               <p class="head">Ukraine gets a Patriot-production opening</p>
               <p class="body">The U.S. said it will license Patriot air-defense production for Ukraine, a significant but longer-horizon boost for Kyiv.</p>
             </article>
-            
+
     </section>
-    
+
 
     <section>
-      <h2>Business News</h2>
-      
-            <article>
-              <p class="head">AI infrastructure pressure remains visible</p>
-              <p class="body">Data-center energy demand, chip volatility, and AI product spending continue to shape market sentiment beyond the daily headlines.</p>
-            </article>
-            
-    </section>
-    
-
-    <section>
-      <h2>Weather</h2>
-      
-            <article>
-              <p class="head">Petaluma: sunny near 78 today, fog after midnight, then around 83 Thursday.</p>
-              
-            </article>
-            
+      <h2>Stock Market News</h2>
 
             <article>
-              <p class="head">Inland contrast: Roseville reaches about 93 today and 98 Thursday; Tahoe stays sunny near 76-77.</p>
-              
+              <p class="head">Stocks lower, oil higher</p>
+              <p class="body">The Dow, S&amp;P 500, and Nasdaq fell while crude jumped about 5%, with geopolitical risk overriding the recent tech-led optimism.</p>
             </article>
-            
 
-            <article>
-              <p class="head">Weather West remains focused on the strong-to-historic El Nino setup; current comments highlight coastal drizzle/coolness and future burn-scar rain risk if a wet winter verifies.</p>
-              
-            </article>
-            
     </section>
     </div>
 <div class="column">
     <section>
       <h2>U.S. News</h2>
-      
+
             <article>
               <p class="head">NATO summit stays geopolitically heavy</p>
               <p class="body">Iran, Ukraine, and alliance posture dominated the day, keeping defense and energy risk near the center of the news cycle.</p>
             </article>
-            
+
     </section>
-    
+
 
     <section>
-      <h2>Stock Market News</h2>
-      
+      <h2>Weather</h2>
+
             <article>
-              <p class="head">Stocks lower, oil higher</p>
-              <p class="body">The Dow, S&amp;P 500, and Nasdaq fell while crude jumped about 5%, with geopolitical risk overriding the recent tech-led optimism.</p>
+              <p class="head">Petaluma: sunny near 78 today, fog after midnight, then around 83 Thursday.</p>
+
             </article>
-            
+
+
+            <article>
+              <p class="head">Inland contrast: Roseville reaches about 93 today and 98 Thursday; Tahoe stays sunny near 76-77.</p>
+
+            </article>
+
+
+            <article>
+              <p class="head">Weather West remains focused on the strong-to-historic El Nino setup; current comments highlight coastal drizzle/coolness and future burn-scar rain risk if a wet winter verifies.</p>
+
+            </article>
+
     </section>
-    
+    </div>
+<div class="column">
+    <section>
+      <h2>Business News</h2>
+
+            <article>
+              <p class="head">AI infrastructure pressure remains visible</p>
+              <p class="body">Data-center energy demand, chip volatility, and AI product spending continue to shape market sentiment beyond the daily headlines.</p>
+            </article>
+
+    </section>
+
 
     <section>
       <h2>Sports</h2>
-      
+
             <article>
               <p class="head">Giants</p>
               <p class="body">Blue Jays at Giants moved into the 12:45 PM first-pitch window after San Francisco&#x27;s 9-3 loss last night.</p>
             </article>
-            
+
 
             <article>
               <p class="head">Athletics</p>
               <p class="body">A&#x27;s visit Detroit at 3:40 PM after Tuesday&#x27;s 6-2 loss.</p>
             </article>
-            
+
 
             <article>
               <p class="head">World Cup</p>
               <p class="body">Quarterfinals are set: France-Morocco opens Thursday, with Spain-Belgium, Norway-England, and Argentina-Switzerland following.</p>
             </article>
-            
+
     </section>
     </div>
-    </div>
+      </div>
 
-    <p class="footer">Afternoon Brief - 2026-07-08 · latest display edition</p>
+      <p class="footer">Afternoon Brief - 2026-07-08 · latest display edition</p>
+    </div>
   </main>
 </body>
 </html>
