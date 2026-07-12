@@ -327,5 +327,12 @@
     "review_time": "July 12, 2026 at 7:34 AM PDT.",
     "path": "trmnl/briefs/2026-07-12-morning/",
     "source": "2026-07-12-morning.md"
+  },
+  {
+    "date": "2026-07-12-afternoon",
+    "title": "Afternoon Brief - 2026-07-12",
+    "review_time": "July 12, 2026 at 12:33 PM PDT.",
+    "path": "trmnl/briefs/2026-07-12-afternoon/",
+    "source": "2026-07-12-afternoon.md"
   }
 ]
