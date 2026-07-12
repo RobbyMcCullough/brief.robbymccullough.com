@@ -313,5 +313,12 @@
     "review_time": "July 11, 2026 at 12:36 PM PDT.",
     "path": "trmnl/briefs/2026-07-11-afternoon/",
     "source": "2026-07-11-afternoon.md"
+  },
+  {
+    "date": "2026-07-11-evening",
+    "title": "Evening Brief - 2026-07-11",
+    "review_time": "July 11, 2026 at 5:30 PM PDT.",
+    "path": "trmnl/briefs/2026-07-11-evening/",
+    "source": "2026-07-11-evening.md"
   }
 ]
