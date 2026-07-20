@@ -467,5 +467,12 @@
     "review_time": "July 19, 2026 at 12:33 PM PDT.",
     "path": "trmnl/briefs/2026-07-19-afternoon/",
     "source": "2026-07-19-afternoon.md"
+  },
+  {
+    "date": "2026-07-19-evening",
+    "title": "Evening Brief - 2026-07-19",
+    "review_time": "July 19, 2026 at 5:35 PM PDT.",
+    "path": "trmnl/briefs/2026-07-19-evening/",
+    "source": "2026-07-19-evening.md"
   }
 ]
