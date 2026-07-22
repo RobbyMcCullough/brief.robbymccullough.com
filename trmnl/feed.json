@@ -509,5 +509,19 @@
     "review_time": "July 21, 2026 at 12:35 PM PDT.",
     "path": "trmnl/briefs/2026-07-21-afternoon/",
     "source": "2026-07-21-afternoon.md"
+  },
+  {
+    "date": "2026-07-21-evening",
+    "title": "Evening Brief - 2026-07-21",
+    "review_time": "July 21, 2026 at 5:38 PM PDT.",
+    "path": "trmnl/briefs/2026-07-21-evening/",
+    "source": "2026-07-21-evening.md"
+  },
+  {
+    "date": "2026-07-22-morning",
+    "title": "Morning Brief - 2026-07-22",
+    "review_time": "July 22, 2026 at 7:36 AM PDT.",
+    "path": "trmnl/briefs/2026-07-22-morning/",
+    "source": "2026-07-22-morning.md"
   }
 ]
