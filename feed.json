@@ -1132,5 +1132,12 @@
     "review_time": "August 21, 2026 at 9:43 AM PDT.",
     "path": "briefs/2026-08-21-morning/",
     "source": "2026-08-21-morning.md"
+  },
+  {
+    "date": "2026-08-21-afternoon",
+    "title": "Afternoon Brief - 2026-08-21",
+    "review_time": "August 21, 2026 at 3:29 PM PDT.",
+    "path": "briefs/2026-08-21-afternoon/",
+    "source": "2026-08-21-afternoon.md"
   }
 ]
