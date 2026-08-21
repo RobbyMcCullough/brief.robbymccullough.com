@@ -1076,5 +1076,19 @@
     "review_time": "August 19, 2026 at 12:36 PM PDT.",
     "path": "trmnl/briefs/2026-08-19-afternoon/",
     "source": "2026-08-19-afternoon.md"
+  },
+  {
+    "date": "2026-08-19-evening",
+    "title": "Evening Brief - 2026-08-19",
+    "review_time": "August 19, 2026 at 5:35 PM PDT.",
+    "path": "trmnl/briefs/2026-08-19-evening/",
+    "source": "2026-08-19-evening.md"
+  },
+  {
+    "date": "2026-08-20-evening",
+    "title": "Evening Brief - 2026-08-20",
+    "review_time": "August 20, 2026 at 6:42 PM PDT.",
+    "path": "trmnl/briefs/2026-08-20-evening/",
+    "source": "2026-08-20-evening.md"
   }
 ]
