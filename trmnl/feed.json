@@ -1188,5 +1188,12 @@
     "review_time": "August 25, 2026 at 12:35 PM PDT.",
     "path": "trmnl/briefs/2026-08-25-afternoon/",
     "source": "2026-08-25-afternoon.md"
+  },
+  {
+    "date": "2026-08-25-evening",
+    "title": "Evening Brief - 2026-08-25",
+    "review_time": "August 25, 2026 at 5:34 PM PDT.",
+    "path": "trmnl/briefs/2026-08-25-evening/",
+    "source": "2026-08-25-evening.md"
   }
 ]
