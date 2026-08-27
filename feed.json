@@ -1244,5 +1244,12 @@
     "review_time": "August 26, 2026 at 12:40 PM PDT.",
     "path": "briefs/2026-08-26-afternoon/",
     "source": "2026-08-26-afternoon.md"
+  },
+  {
+    "date": "2026-08-26-evening",
+    "title": "Evening Brief - 2026-08-26",
+    "review_time": "August 26, 2026 at 5:40 PM PDT.",
+    "path": "briefs/2026-08-26-evening/",
+    "source": "2026-08-26-evening.md"
   }
 ]
