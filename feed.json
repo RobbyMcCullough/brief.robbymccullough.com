@@ -1363,5 +1363,12 @@
     "review_time": "September 1, 2026 at 12:37 PM PDT.",
     "path": "briefs/2026-09-01-afternoon/",
     "source": "2026-09-01-afternoon.md"
+  },
+  {
+    "date": "2026-09-01-evening",
+    "title": "Evening Brief - 2026-09-01",
+    "review_time": "September 1, 2026 at 5:38 PM PDT.",
+    "path": "briefs/2026-09-01-evening/",
+    "source": "2026-09-01-evening.md"
   }
 ]
