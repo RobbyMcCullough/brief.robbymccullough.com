@@ -1412,5 +1412,12 @@
     "review_time": "September 3, 2026 at 5:35 PM PDT.",
     "path": "briefs/2026-09-03-evening/",
     "source": "2026-09-03-evening.md"
+  },
+  {
+    "date": "2026-09-04-morning",
+    "title": "Morning Brief - 2026-09-04",
+    "review_time": "September 4, 2026 at 7:38 AM PDT.",
+    "path": "briefs/2026-09-04-morning/",
+    "source": "2026-09-04-morning.md"
   }
 ]
