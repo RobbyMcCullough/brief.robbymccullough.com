@@ -1391,5 +1391,12 @@
     "review_time": "September 4, 2026 at 12:36 PM PDT.",
     "path": "trmnl/briefs/2026-09-04-afternoon/",
     "source": "2026-09-04-afternoon.md"
+  },
+  {
+    "date": "2026-09-04-evening",
+    "title": "Evening Brief - 2026-09-04",
+    "review_time": "September 4, 2026 at 5:35 PM PDT.",
+    "path": "trmnl/briefs/2026-09-04-evening/",
+    "source": "2026-09-04-evening.md"
   }
 ]
