@@ -1545,5 +1545,19 @@
     "review_time": "September 11, 2026 at 5:32 PM PDT.",
     "path": "trmnl/briefs/2026-09-11-evening/",
     "source": "2026-09-11-evening.md"
+  },
+  {
+    "date": "2026-09-12-morning",
+    "title": "Morning Brief - 2026-09-12",
+    "review_time": "September 12, 2026 at 7:31 AM PDT.",
+    "path": "trmnl/briefs/2026-09-12-morning/",
+    "source": "2026-09-12-morning.md"
+  },
+  {
+    "date": "2026-09-12-afternoon",
+    "title": "Afternoon Brief - 2026-09-12",
+    "review_time": "September 12, 2026 at 2:30 PM PDT.",
+    "path": "trmnl/briefs/2026-09-12-afternoon/",
+    "source": "2026-09-12-afternoon.md"
   }
 ]
