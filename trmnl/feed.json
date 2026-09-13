@@ -1559,5 +1559,12 @@
     "review_time": "September 12, 2026 at 12:30 PM PDT.",
     "path": "trmnl/briefs/2026-09-12-afternoon/",
     "source": "2026-09-12-afternoon.md"
+  },
+  {
+    "date": "2026-09-12-evening",
+    "title": "Evening Brief - 2026-09-12",
+    "review_time": "September 12, 2026 at 5:31 PM PDT.",
+    "path": "trmnl/briefs/2026-09-12-evening/",
+    "source": "2026-09-12-evening.md"
   }
 ]
