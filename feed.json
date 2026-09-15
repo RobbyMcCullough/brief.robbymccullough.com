@@ -1622,5 +1622,19 @@
     "review_time": "September 14, 2026 at 7:32 AM PDT.",
     "path": "briefs/2026-09-14-morning/",
     "source": "2026-09-14-morning.md"
+  },
+  {
+    "date": "2026-09-14-afternoon",
+    "title": "Afternoon Brief - 2026-09-14",
+    "review_time": "September 14, 2026 at 12:31 PM PDT.",
+    "path": "briefs/2026-09-14-afternoon/",
+    "source": "2026-09-14-afternoon.md"
+  },
+  {
+    "date": "2026-09-14-evening",
+    "title": "Evening Brief - 2026-09-14",
+    "review_time": "September 14, 2026 at 5:32 PM PDT.",
+    "path": "briefs/2026-09-14-evening/",
+    "source": "2026-09-14-evening.md"
   }
 ]
