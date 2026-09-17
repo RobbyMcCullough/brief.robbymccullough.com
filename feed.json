@@ -1685,5 +1685,12 @@
     "review_time": "September 17, 2026 at 7:37 AM PDT.",
     "path": "briefs/2026-09-17-morning/",
     "source": "2026-09-17-morning.md"
+  },
+  {
+    "date": "2026-09-17-afternoon",
+    "title": "Afternoon Brief - 2026-09-17",
+    "review_time": "September 17, 2026 at 12:32 PM PDT.",
+    "path": "briefs/2026-09-17-afternoon/",
+    "source": "2026-09-17-afternoon.md"
   }
 ]
