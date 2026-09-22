@@ -1734,5 +1734,12 @@
     "review_time": "September 22, 2026 at 7:32 AM PDT.",
     "path": "trmnl/briefs/2026-09-22-morning/",
     "source": "2026-09-22-morning.md"
+  },
+  {
+    "date": "2026-09-22-afternoon",
+    "title": "Afternoon Brief - 2026-09-22",
+    "review_time": "September 22, 2026 at 12:34 PM PDT.",
+    "path": "trmnl/briefs/2026-09-22-afternoon/",
+    "source": "2026-09-22-afternoon.md"
   }
 ]
