@@ -1713,5 +1713,26 @@
     "review_time": "September 21, 2026 at 7:40 AM PDT.",
     "path": "trmnl/briefs/2026-09-21-morning/",
     "source": "2026-09-21-morning.md"
+  },
+  {
+    "date": "2026-09-21-afternoon",
+    "title": "Afternoon Brief - 2026-09-21",
+    "review_time": "September 21, 2026 at 12:33 PM PDT.",
+    "path": "trmnl/briefs/2026-09-21-afternoon/",
+    "source": "2026-09-21-afternoon.md"
+  },
+  {
+    "date": "2026-09-21-evening",
+    "title": "Evening Brief - 2026-09-21",
+    "review_time": "September 21, 2026 at 5:31 PM PDT.",
+    "path": "trmnl/briefs/2026-09-21-evening/",
+    "source": "2026-09-21-evening.md"
+  },
+  {
+    "date": "2026-09-22-morning",
+    "title": "Morning Brief - 2026-09-22",
+    "review_time": "September 22, 2026 at 7:32 AM PDT.",
+    "path": "trmnl/briefs/2026-09-22-morning/",
+    "source": "2026-09-22-morning.md"
   }
 ]
