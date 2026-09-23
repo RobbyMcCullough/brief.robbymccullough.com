@@ -1741,5 +1741,12 @@
     "review_time": "September 22, 2026 at 12:34 PM PDT.",
     "path": "trmnl/briefs/2026-09-22-afternoon/",
     "source": "2026-09-22-afternoon.md"
+  },
+  {
+    "date": "2026-09-22-evening",
+    "title": "Tuesday Evening \u00b7 September 22",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-09-22-evening/",
+    "source": "2026-09-22-evening.md"
   }
 ]
