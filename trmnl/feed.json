@@ -1744,7 +1744,7 @@
   },
   {
     "date": "2026-09-22-evening",
-    "title": "Tuesday Evening \u00b7 September 22",
+    "title": "Tuesday Evening · September 22",
     "review_time": "",
     "path": "trmnl/briefs/2026-09-22-evening/",
     "source": "2026-09-22-evening.md"
@@ -1758,23 +1758,30 @@
   },
   {
     "date": "2026-09-23-afternoon",
-    "title": "TRMNL Brief \u2014 September 23, 2026",
+    "title": "TRMNL Brief — September 23, 2026",
     "review_time": "",
     "path": "trmnl/briefs/2026-09-23-afternoon/",
     "source": "2026-09-23-afternoon.md"
   },
   {
     "date": "2026-09-23-evening",
-    "title": "Evening Brief \u2014 September 23, 2026",
+    "title": "Evening Brief — September 23, 2026",
     "review_time": "",
     "path": "trmnl/briefs/2026-09-23-evening/",
     "source": "2026-09-23-evening.md"
   },
   {
     "date": "2026-09-24-morning",
-    "title": "Morning Display \u2014 September 24, 2026",
+    "title": "Morning Display — September 24, 2026",
     "review_time": "",
     "path": "trmnl/briefs/2026-09-24-morning/",
     "source": "2026-09-24-morning.md"
+  },
+  {
+    "date": "2026-09-24-afternoon",
+    "title": "Afternoon Display — September 24, 2026",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-09-24-afternoon/",
+    "source": "2026-09-24-afternoon.md"
   }
 ]
