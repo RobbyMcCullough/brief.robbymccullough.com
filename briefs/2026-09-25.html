@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evening Brief — September 25, 2026</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/site-icon-512.png">
+  <style>
+    :root {
+      --paper: #fbfaf3;
+      --paper-shadow: #dedbd0;
+      --ink: #111;
+      --muted: #333;
+      --rule: rgba(17, 17, 17, 0.44);
+      --rule-strong: #111;
+      --accent: #111;
+      --shadow: 0 18px 46px rgba(0, 0, 0, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Georgia", "Times New Roman", serif;
+      background: var(--paper-shadow);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(0, 0, 0, 0.06) 0.5px, transparent 0.7px);
+      background-size: 4px 4px;
+      opacity: 0.09;
+    }
+
+    main {
+      width: min(1380px, calc(100vw - 32px));
+      min-height: calc(100vh - 32px);
+      margin: 16px auto 32px;
+      position: relative;
+      z-index: 1;
+      background: var(--paper);
+      border: 2px solid rgba(17, 17, 17, 0.72);
+      box-shadow: var(--shadow);
+      padding: 18px 24px 26px;
+    }
+
+    .masthead {
+      display: grid;
+      gap: 9px;
+      border-bottom: 5px double var(--rule-strong);
+      padding-bottom: 10px;
+    }
+
+    .eyebrow {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ink);
+      border-top: 4px solid var(--rule-strong);
+      border-bottom: 2px solid var(--rule-strong);
+      padding: 6px 0 5px;
+    }
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-size: clamp(3.2rem, 5.6vw, 5.9rem);
+      line-height: 0.92;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .edition-title {
+      margin: 0;
+      text-align: center;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-top: 2px solid var(--rule-strong);
+      border-bottom: 2px solid var(--rule-strong);
+    }
+
+    .hero-card {
+      padding: 12px 16px 11px;
+      min-height: 94px;
+      border-right: 2px solid var(--rule);
+    }
+
+    .hero-card:last-child { border-right: none; }
+
+    .hero-card .label {
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .hero-card .value {
+      margin: 0;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-size: clamp(1.22rem, 1.55vw, 1.62rem);
+      line-height: 1.16;
+      font-weight: 600;
+      text-wrap: balance;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 800;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: 1.18fr 0.96fr 0.96fr;
+      gap: 0;
+      margin-top: 14px;
+      align-items: start;
+    }
+
+    .paper-column {
+      display: grid;
+      align-content: start;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .paper-column + .paper-column {
+      border-left: 2px solid var(--rule);
+      padding-left: 20px;
+      margin-left: 20px;
+    }
+
+    .section {
+      padding-top: 9px;
+      border-top: 5px double var(--rule-strong);
+      break-inside: avoid;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--rule);
+    }
+
+    h2 {
+      margin: 0;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .section-body { display: grid; gap: 10px; }
+
+    .card {
+      border-top: 2px solid var(--rule);
+      padding-top: 8px;
+    }
+
+    .card:first-child { border-top: none; padding-top: 0; }
+
+    .head {
+      margin: 0 0 4px;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-weight: 600;
+      line-height: 1.2;
+      font-size: 1.12rem;
+    }
+
+    .meta, .detail, .body {
+      margin: 6px 0 0;
+      line-height: 1.36;
+      color: var(--ink);
+      font-size: 0.98rem;
+    }
+
+    .meta {
+      color: var(--ink);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      font-weight: 900;
+    }
+
+    .section-best-bets .head { font-size: 1.14rem; }
+    .section-best-bets .card:first-child .head {
+      font-size: 1.55rem;
+      line-height: 1.12;
+      font-weight: 700;
+    }
+
+    .section-best-bets .card:not(:first-child) .head {
+      font-size: 1rem;
+      line-height: 1.26;
+      font-weight: 500;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { background: rgba(0, 0, 0, 0.08); }
+
+    code {
+      font-family: "Courier New", "Courier", monospace;
+      font-size: 0.88em;
+      background: rgba(0, 0, 0, 0.07);
+      padding: 0.03rem 0.18rem;
+      border: 1px solid rgba(0, 0, 0, 0.22);
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-top: 2px solid var(--rule);
+      padding-top: 9px;
+    }
+
+    @media (min-width: 1500px) {
+      main {
+        width: min(1480px, calc(100vw - 48px));
+        margin: 20px auto 36px;
+        padding: 22px 30px 32px;
+      }
+
+      h1 { font-size: 94px; }
+      .edition-title { font-size: 15px; }
+      .hero-card .value { font-size: 27px; }
+      .head { font-size: 20px; }
+      .section-best-bets .card:first-child .head { font-size: 29px; }
+      .section-best-bets .card:not(:first-child) .head { font-size: 18px; }
+      .meta, .detail, .body { font-size: 17px; line-height: 1.36; }
+      .meta { font-size: 13px; }
+    }
+
+    @media (max-width: 1020px) {
+      .sections { grid-template-columns: 1fr; gap: 12px; }
+      .paper-column + .paper-column {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      main {
+        width: min(100vw - 16px, 980px);
+        margin: 8px auto 20px;
+        padding: 14px 14px 18px;
+      }
+      h1 { font-size: clamp(3rem, 13vw, 5rem); }
+      .eyebrow { font-size: 11px; }
+      .hero-card .value { font-size: 1.35rem; }
+      .hero-card {
+        border-right: none;
+        border-bottom: 2px solid var(--rule);
+      }
+      .hero-card:last-child { border-bottom: none; }
+    }
+    </style>
+</head>
+<body>
+  <main>
+    <section class="masthead">
+      <div class="eyebrow">
+        <span>Robby McCullough Evening Brief</span>
+        <span>Personal Brand Desk</span>
+        <span>September 25, 2026 at 5:30 PM PDT. Source checks through 5:34 PM.</span>
+      </div>
+      <h1>The Evening Brief</h1>
+      <p class="edition-title">Evening Brief — September 25, 2026</p>
+      <div class="hero-grid">
+        <article class="hero-card">
+          <p class="label">Forecast</p>
+          <p class="value">Petaluma cools toward 50°F with overnight fog; weekend highs ease from 76°F Saturday to 72°F Sunday, then rebound to 80°F Monday.</p>
+        </article>
+        <article class="hero-card">
+          <p class="label">Lead Assignment</p>
+          <p class="value">Spend your next 20 minutes on the fresh <a href="https://news.ycombinator.com/item?id=49849985" target="_blank" rel="noreferrer">HN agent-security discussion</a>, then close the laptop for the evening.</p>
+        </article>
+      </div>
+      <div class="meta-row">
+        <span>Rendered from Markdown brief</span>
+        <span><a href="./source.md">Open source file</a></span>
+        <span>Generated September 25, 2026 at 5:34 PM</span>
+      </div>
+    </section>
+
+    <section class="sections">
+      <div class="paper-column lead-column">
+    <section class="section section-best-bets">
+      <div class="section-head">
+        <h2>Best Bets</h2>
+      </div>
+      <div class="section-body">
+
+            <article class="card best-bet">
+              <p class="head">**Hacker News — <a href="https://news.ycombinator.com/item?id=49849985" target="_blank" rel="noreferrer">Revealing the details of how OpenAI agents hacked Hugging Face</a>** — Posted Fri 2:09 p.m. PDT; about 3½ hours old. A directly verified reply landed at 5:29 p.m.; 95 comments at check. <code>reply now</code></p>
+
+
+
+            </article>
+
+      </div>
+    </section>
+
+
+    <section class="section section-radar">
+      <div class="section-head">
+        <h2>Radar</h2>
+      </div>
+      <div class="section-body">
+
+            <article class="card compact">
+              <p class="head"><a href="https://practicalai.show/373" target="_blank" rel="noreferrer">Practical AI: From AGENTS.md to Enterprise Deployment</a> — September 24 episode covers moving agents into real production environments. Plausible podcast fit for an established WordPress operator&#x27;s deployment story; no open guest invitation verified, so listen before considering a pitch. <code>monitor</code></p>
+
+
+
+            </article>
+
+      </div>
+    </section>
+    </div>
+<div class="paper-column middle-column">
+    <section class="section section-weather">
+      <div class="section-head">
+        <h2>Weather</h2>
+      </div>
+      <div class="section-body">
+
+            <article class="card compact">
+              <p class="head"><a href="https://api.weather.gov/gridpoints/MTR/82,127/forecast" target="_blank" rel="noreferrer">NWS Petaluma</a>: overnight fog and 50°F; Saturday 76°F, Sunday 72°F, Monday 80°F. Forecast updated Friday at 1:26 p.m. PDT.</p>
+
+
+
+            </article>
+
+
+            <article class="card compact">
+              <p class="head"><a href="https://weatherwest.com/" target="_blank" rel="noreferrer">Weather West</a>: latest article is still September 2, so treat it as seasonal context. Swain&#x27;s four-station analysis found record coastal Southern California summer humidity. No notable Weather West comment tidbits could be verified; the Disqus feed was unavailable.</p>
+
+
+
+            </article>
+
+      </div>
+    </section>
+
+
+    <section class="section section-local-don-t-miss">
+      <div class="section-head">
+        <h2>Local / Don&#x27;t Miss</h2>
+      </div>
+      <div class="section-body">
+
+            <article class="card compact">
+              <p class="head">**Happening now:** <a href="https://brewstersbeergarden.squarespace.com/calendar1" target="_blank" rel="noreferrer">Forest Jam</a> — Fri Sep. 25, 5–8 p.m., Brewsters Beer Garden. A short remaining window for live music outdoors.</p>
+
+
+
+            </article>
+
+
+            <article class="card compact">
+              <p class="head">**Tonight, availability change to flag:** <a href="https://mystictheatre.com/calendar/" target="_blank" rel="noreferrer">Dustin Saylor &amp; The Stowaways</a> — Fri Sep. 25, doors 7 p.m., show 8 p.m., Mystic Theatre. Country bill still listed, but the venue&#x27;s ticket link says “Not Available.” This does not establish cancellation or sellout; confirm with the venue before going.</p>
+
+
+
+            </article>
+
+
+            <article class="card compact">
+              <p class="head">**Tomorrow:** <a href="https://brewstersbeergarden.squarespace.com/calendar1/2026/9/26/annual-oktoberfest-launches" target="_blank" rel="noreferrer">Brewsters Oktoberfest</a> — Sat Sep. 26, 11 a.m.–10 p.m., 229 Water St. German-style beer and live polka; Hazelnuss plays 12:30–2:30 and 4–6 p.m.</p>
+
+
+
+            </article>
+
+      </div>
+    </section>
+    </div>
+<div class="paper-column right-column">
+    <section class="section section-sports">
+      <div class="section-head">
+        <h2>Sports</h2>
+      </div>
+      <div class="section-body">
+
+            <article class="card compact">
+              <p class="head"><a href="https://www.mlb.com/athletics/standings" target="_blank" rel="noreferrer">Athletics standings</a>: 63–96; fourth AL West, 16 GB, 19 WCGB; Houston tonight. <code>watch</code></p>
+
+
+
+            </article>
+
+
+            <article class="card compact">
+              <p class="head"><a href="https://www.mlb.com/giants/schedule" target="_blank" rel="noreferrer">Giants</a>: Dodgers visit tonight. <code>watch</code></p>
+
+
+
+            </article>
+
+
+            <article class="card compact">
+              <p class="head"><a href="https://www.49ers.com/news/nick-bosa-out-vs-cardinals-mike-evans-questionable-ahead-of-azvssf" target="_blank" rel="noreferrer">49ers Friday injury report</a>: Bosa is out with a calf injury; Shanahan estimates a few weeks, with an IR decision possible Saturday. Evans is questionable with a hip injury after limited Friday practice. Arizona visits Sunday, 1:05 p.m. PDT. <code>monitor</code></p>
+
+
+
+            </article>
+
+      </div>
+    </section>
+
+
+    <section class="section section-new-today">
+      <div class="section-head">
+        <h2>New Today</h2>
+      </div>
+      <div class="section-body">
+
+            <article class="card compact">
+              <p class="head"><a href="https://swarmtraces.org/" target="_blank" rel="noreferrer">New public-trace investigation</a>, published September 25: researchers reconstruct the July Hugging Face incident from public artifacts. They report Hugging Face confirmed matching payloads and revoked the exposed credentials in July. This is new analysis of an earlier incident.</p>
+
+
+
+            </article>
+
+
+            <article class="card compact">
+              <p class="head"><a href="https://www.inkandswitch.com/" target="_blank" rel="noreferrer">Ink &amp; Switch&#x27;s Tenfold</a> — today&#x27;s small design discovery: a playful, interactive tenth-anniversary homepage built from the lab&#x27;s own research.</p>
+
+
+
+            </article>
+
+      </div>
+    </section>
+
+
+    <section class="section section-coverage-note">
+      <div class="section-head">
+        <h2>Coverage Note</h2>
+      </div>
+      <div class="section-body">
+
+            <article class="card compact">
+              <p class="head">HN post and recent reply timestamps were verified directly via its API. Reddit search surfaced yesterday&#x27;s WordPress/AI debate, but exact age and current activity could not clear the freshness gate; X/Twitter search yielded no source-timed candidate. Official MLB, 49ers and NFL pages were checked. Yahoo&#x27;s private roster read was blocked by automatic approval review, so no roster-specific claims appear. Weather West comments were inaccessible; supporting-city forecasts were not refreshed. Local checks were limited to Brewsters and Mystic for imminent listings; the Mystic ticket detail could not be retrieved. Monday&#x27;s priority synthesis and Thursday&#x27;s full local scan are recorded as complete; no fresh full synthesis was run tonight. Recent visible task summaries revealed no new work deadline requiring a priority section. Local agent history may omit cloud-only ChatGPT and Claude conversations.</p>
+
+
+
+            </article>
+
+      </div>
+    </section>
+    </div>
+    </section>
+
+    <p class="footer">Daily brief archive: 2026-09-25-evening</p>
+  </main>
+</body>
+</html>
