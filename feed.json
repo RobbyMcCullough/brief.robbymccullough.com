@@ -1972,5 +1972,12 @@
     "review_time": "October 1, 2026 at 5:35 PM PDT. Source checks through 5:35 PM.",
     "path": "briefs/2026-10-01-evening/",
     "source": "2026-10-01-evening.md"
+  },
+  {
+    "date": "2026-10-02-morning",
+    "title": "Morning Brief \u2014 October 2, 2026",
+    "review_time": "October 2, 2026 at 7:31 AM PDT. Source checks through 7:36 AM.",
+    "path": "briefs/2026-10-02-morning/",
+    "source": "2026-10-02-morning.md"
   }
 ]
