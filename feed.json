@@ -2000,5 +2000,12 @@
     "review_time": "October 3, 2026 at 7:32 AM PDT. Source checks through 7:37 AM.",
     "path": "briefs/2026-10-03-morning/",
     "source": "2026-10-03-morning.md"
+  },
+  {
+    "date": "2026-10-03-afternoon",
+    "title": "Afternoon Brief \u2014 October 3, 2026",
+    "review_time": "October 3, 2026 at 12:32 PM PDT. Source checks through 12:32 PM.",
+    "path": "briefs/2026-10-03-afternoon/",
+    "source": "2026-10-03-afternoon.md"
   }
 ]
