@@ -2007,5 +2007,12 @@
     "review_time": "October 3, 2026 at 12:32 PM PDT. Source checks through 12:32 PM.",
     "path": "briefs/2026-10-03-afternoon/",
     "source": "2026-10-03-afternoon.md"
+  },
+  {
+    "date": "2026-10-03-evening",
+    "title": "Evening Brief \u2014 October 3, 2026",
+    "review_time": "October 3, 2026 at 5:32 PM PDT. Source checks through 5:32 PM.",
+    "path": "briefs/2026-10-03-evening/",
+    "source": "2026-10-03-evening.md"
   }
 ]
