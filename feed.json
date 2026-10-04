@@ -2021,5 +2021,12 @@
     "review_time": "October 4, 2026 at 7:32 AM PDT. Source checks through 7:38 AM.",
     "path": "briefs/2026-10-04-morning/",
     "source": "2026-10-04-morning.md"
+  },
+  {
+    "date": "2026-10-04-afternoon",
+    "title": "Afternoon Brief \u2014 October 4, 2026",
+    "review_time": "October 4, 2026 at 12:31 PM PDT. Sources checked through 12:39 PM.",
+    "path": "briefs/2026-10-04-afternoon/",
+    "source": "2026-10-04-afternoon.md"
   }
 ]
