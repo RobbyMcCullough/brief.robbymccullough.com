@@ -2028,5 +2028,19 @@
     "review_time": "October 4, 2026 at 12:31 PM PDT. Sources checked through 12:39 PM.",
     "path": "briefs/2026-10-04-afternoon/",
     "source": "2026-10-04-afternoon.md"
+  },
+  {
+    "date": "2026-10-04-evening",
+    "title": "Evening Brief \u2014 October 4, 2026",
+    "review_time": "October 4, 2026 at 5:32 PM PDT. Sources checked through 5:40 PM.",
+    "path": "briefs/2026-10-04-evening/",
+    "source": "2026-10-04-evening.md"
+  },
+  {
+    "date": "2026-10-05-morning",
+    "title": "Morning Brief \u2014 October 5, 2026",
+    "review_time": "October 5, 2026 at 7:30 AM PDT. Source checks through 7:38 AM.",
+    "path": "briefs/2026-10-05-morning/",
+    "source": "2026-10-05-morning.md"
   }
 ]
