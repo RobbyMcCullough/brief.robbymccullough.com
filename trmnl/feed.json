@@ -2014,5 +2014,19 @@
     "review_time": "October 5, 2026 at 12:32 PM PDT.",
     "path": "trmnl/briefs/2026-10-05-afternoon/",
     "source": "2026-10-05-afternoon.md"
+  },
+  {
+    "date": "2026-10-05-evening",
+    "title": "Evening Brief - 2026-10-05",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-05-evening/",
+    "source": "2026-10-05-evening.md"
+  },
+  {
+    "date": "2026-10-06-morning",
+    "title": "Morning Brief - 2026-10-06",
+    "review_time": "October 6, 2026 at 7:42 AM PDT.",
+    "path": "trmnl/briefs/2026-10-06-morning/",
+    "source": "2026-10-06-morning.md"
   }
 ]
