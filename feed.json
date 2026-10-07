@@ -2084,5 +2084,12 @@
     "review_time": "October 7, 2026 at 7:31 AM PDT. Sources checked through 7:35 AM.",
     "path": "briefs/2026-10-07-morning/",
     "source": "2026-10-07-morning.md"
+  },
+  {
+    "date": "2026-10-07-afternoon",
+    "title": "Afternoon Brief \u2014 October 7, 2026",
+    "review_time": "October 7, 2026 at 12:31 PM PDT. Sources checked through 12:35 PM.",
+    "path": "briefs/2026-10-07-afternoon/",
+    "source": "2026-10-07-afternoon.md"
   }
 ]

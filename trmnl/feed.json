@@ -2049,5 +2049,12 @@
     "review_time": "October 7, 2026 at 7:35 AM PDT.",
     "path": "trmnl/briefs/2026-10-07-morning/",
     "source": "2026-10-07-morning.md"
+  },
+  {
+    "date": "2026-10-07-afternoon",
+    "title": "Afternoon",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-07-afternoon/",
+    "source": "2026-10-07-afternoon.md"
   }
 ]
