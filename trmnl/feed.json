@@ -2056,5 +2056,12 @@
     "review_time": "",
     "path": "trmnl/briefs/2026-10-07-afternoon/",
     "source": "2026-10-07-afternoon.md"
+  },
+  {
+    "date": "2026-10-07-evening",
+    "title": "Evening",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-07-evening/",
+    "source": "2026-10-07-evening.md"
   }
 ]
