@@ -2147,5 +2147,12 @@
     "review_time": "October 10, 2026 at 12:32 PM PDT.",
     "path": "briefs/2026-10-10-afternoon/",
     "source": "2026-10-10-afternoon.md"
+  },
+  {
+    "date": "2026-10-10-evening",
+    "title": "Evening Brief \u2014 October 10, 2026",
+    "review_time": "October 10, 2026 at 5:32 PM PDT.",
+    "path": "briefs/2026-10-10-evening/",
+    "source": "2026-10-10-evening.md"
   }
 ]

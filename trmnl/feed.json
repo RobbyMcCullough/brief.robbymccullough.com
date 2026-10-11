@@ -2105,5 +2105,19 @@
     "review_time": "October 10, 2026 at 7:38 AM PDT.",
     "path": "trmnl/briefs/2026-10-10-morning/",
     "source": "2026-10-10-morning.md"
+  },
+  {
+    "date": "2026-10-10-afternoon",
+    "title": "Afternoon Brief \u2014 October 10, 2026",
+    "review_time": "October 10, 2026 at 12:32 PM PDT.",
+    "path": "trmnl/briefs/2026-10-10-afternoon/",
+    "source": "2026-10-10-afternoon.md"
+  },
+  {
+    "date": "2026-10-10-evening",
+    "title": "Evening Brief \u2014 October 10, 2026",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-10-evening/",
+    "source": "2026-10-10-evening.md"
   }
 ]
