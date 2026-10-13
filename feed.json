@@ -2203,5 +2203,12 @@
     "review_time": "October 13, 2026 at 7:31 AM PDT.",
     "path": "briefs/2026-10-13-morning/",
     "source": "2026-10-13-morning.md"
+  },
+  {
+    "date": "2026-10-13-afternoon",
+    "title": "Afternoon Brief \u2014 October 13, 2026",
+    "review_time": "October 13, 2026 at 12:32 PM PDT.",
+    "path": "briefs/2026-10-13-afternoon/",
+    "source": "2026-10-13-afternoon.md"
   }
 ]
