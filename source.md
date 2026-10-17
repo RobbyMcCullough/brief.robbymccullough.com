@@ -1,44 +1,50 @@
-# Daily Brief: October 17, 2026 — Morning
+# Afternoon Brief — October 17, 2026
 
-Review time: October 17, 2026 at 7:28 AM PDT.
+Review time: October 17, 2026 at 12:31 PM PDT.
 
 ## Weather Line
 
-- Petaluma reaches about 90°F today, then cools sharply to 74°F Sunday and 66°F Monday; a chance of showers arrives Tuesday.
+Petaluma is sunny near 82°F, heading for 91°F; Sunday cools to 74°F and Monday to 66°F, with showers possible Tuesday.
 
 ## Today In One Line
 
-- Best use of 20 minutes: join the live HN discussion about accountability and containment for action-taking agents, with a concrete operator example.
+With no conversation worth forcing, Wind to Wine starts at 1 PM; the Red Jumpsuit Apparatus plays the Mystic tonight.
 
 ## Best Bets
 
-- HN: [Cloud Agents Are Inevitable AI Prisons](https://news.ycombinator.com/item?id=49820267)
-  Published: about 12:30 AM PDT | Age: about 7 hours | Latest visible activity: about 5:30 AM PDT | `reply now`
+No HN, Reddit, or X conversation cleared the freshness and firsthand-fit bar this afternoon.
+
+## Reply Guidance
+
+No reply recommended. HN’s newest AI-memory evaluation story had no comments. Reddit surfaced a fresh Commanders fan thread, but it did not offer a useful personal-brand angle and direct comment timing was not dependable. X was checked live; no timely, high-fit conversation stood out.
 
 ## Weather
 
-- [Petaluma forecast](https://forecast.weather.gov/MapClick.php?lat=38.2326&lon=-122.6443): sunny near 90°F today; fog then sun near 74°F Sunday. Monday tops near 66°F, with a 20% shower chance Monday night and 30% Tuesday.
-- [Weather West](https://weatherwest.com/archives/44119): the latest checked outlook remains seasonal, with strong El Niño odds favoring a wetter California winter. No notable comment tidbit verified today.
+- [Petaluma NWS forecast](https://forecast.weather.gov/MapClick.php?lat=38.2326&lon=-122.6443): sunny near 91°F today; about 74°F Sunday and 66°F Monday. A 20% shower chance arrives Monday night, rising to 30% Tuesday.
+- [Weather West’s Oct. 12 outlook](https://weatherwest.com/archives/44119) is seasonal: the record-strength El Niño shifts the odds toward a very wet California winter, with the main precipitation signal more likely from December onward.
+- No high-signal Weather West comment tidbit verified; the comments feed was not accessible.
 
 ## Sports
 
-- [49ers](https://www.49ers.com/schedule/): next game is Monday, Oct. 19 vs. Washington at 5:15 PM PDT. The Yahoo roster lists Stefon Diggs as questionable for that game; Washington’s official report had him limited Thursday and Friday. Recheck the final designation before kickoff.
+- [49ers](https://www.49ers.com/schedule/): 5–0 and hosting Washington Monday, Oct. 19 at 5:15 PM PDT. [Nick Bosa missed Friday’s practice](https://www.nfl.com/injuries/?team=stl); Shanahan had said earlier in the week that a return remained possible. `watch`
+- [Pat Freiermuth](https://www.buccaneers.com/team/injury-report/week/conf-3) was added to Pittsburgh’s report Saturday with a calf issue and is questionable for Sunday. `monitor`
+- [Stefon Diggs](https://www.nfl.com/injuries/?team=stl) remains questionable for Monday after limited Friday participation. `monitor`
 
 ## Radar
 
-- No fresh podcast or conference opportunity cleared this morning’s fit and timing check.
+No podcast, conference, or CFP opportunity cleared the fit and verification bar for action this afternoon.
 
 ## Local / Don’t Miss
 
-- Today — [Petaluma River guided kayak tour](https://www.visitpetaluma.com/find-events/) · 10 AM–noon, The Floathouse.
-- Today — [Wind to Wine Festival](https://www.visitpetaluma.com/event/wind-to-wine-festival/) · 1–4 PM, Gambonini Family Ranch.
-- Today — [Dust to Dust artist talk with Katie Murken](https://www.petalumaartscenter.org/events-exhibitions) · 3:30–4:30 PM, Petaluma Arts Center.
+- **Today — [Wind to Wine Festival](https://www.visitpetaluma.com/event/wind-to-wine-festival/)** · 1–4 PM, Gambonini Family Ranch; starts shortly, with Petaluma Gap wines and local food.
+- **Today — [Dust to Dust artist talk with Katie Murken](https://www.petalumaartscenter.org/events-exhibitions)** · 3:30–4:30 PM, Petaluma Arts Center; a local arts stop.
+- **Tonight — [The Red Jumpsuit Apparatus](https://mystictheatre.com/)** · doors 7:30 PM, show 8:30 PM, Mystic Theatre.
 
 ## New Today
 
-- [SPY closed down 1.1% Friday](https://finance.yahoo.com/quote/SPY/history/); Bitcoin was about 1.0% lower at the morning check.
-- [WordPress.com announced Agent updates](https://wordpress.com/blog/2026/10/15/wordpress-agent-updates/) on Thursday, including in-page text editing and new site guidance controls.
+- [A new agent-memory evaluation](https://kairos-experiment.com/checks.html) reports that common checks missed counterfeit or absent memory in a small test (seven items); useful as a test-design prompt, not broad proof.
+- [SPY closed down 1.1% Friday](https://finance.yahoo.com/quote/SPY/history/); Bitcoin was nearly flat at the afternoon check.
 
 ## Coverage Note
 
-- Checked HN current discussions, Reddit search, official NWS and Weather West pages, Visit Petaluma, Mystic Theatre, Petaluma Arts Center, official 49ers/NFL pages, and the signed-in Yahoo roster. One HN thread cleared freshness and fit; Reddit yielded no source-timed candidate, and X/Twitter timing could not be verified. Today’s events were verified on Visit Petaluma and the Arts Center; the broader official event scan was completed Thursday, not repeated today. Weather West comments were not verifiable. Cloud-only ChatGPT or Claude project activity may be absent from local agent history; this week’s priorities were synthesized Monday and have no material change requiring a repeat.
+Checked HN’s live new-story feed and item API, X Home, Reddit search and a current r/Commanders page, official NWS and 49ers/NFL sources, the signed-in Yahoo roster, Weather West, Visit Petaluma, Petaluma Arts Center, and Mystic Theatre. HN’s fresh AI-memory story had zero comments. Reddit did not provide dependable recent comment timing for the current thread; X showed relative post times, but no niche-fit opening. Thursday’s full Petaluma scan and Monday’s weekly-priority synthesis remain current; this afternoon’s event spot-check covered Visit Petaluma and Mystic, not every standing source. Event details without primary-page timing were omitted. Cloud-only ChatGPT or Claude project activity may be absent from local agent history.

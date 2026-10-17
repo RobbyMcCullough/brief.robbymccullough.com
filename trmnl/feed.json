@@ -2238,5 +2238,12 @@
     "review_time": "October 17, 2026 at 7:28 AM PDT.",
     "path": "trmnl/briefs/2026-10-17-morning/",
     "source": "2026-10-17-morning.md"
+  },
+  {
+    "date": "2026-10-17-afternoon",
+    "title": "Afternoon Brief - 2026-10-17",
+    "review_time": "October 17, 2026 at 12:31 PM PDT.",
+    "path": "trmnl/briefs/2026-10-17-afternoon/",
+    "source": "2026-10-17-afternoon.md"
   }
 ]
