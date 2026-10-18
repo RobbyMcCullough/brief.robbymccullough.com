@@ -2248,9 +2248,23 @@
   },
   {
     "date": "2026-10-17-evening",
-    "title": "Evening Brief \u2014 October 17, 2026",
-    "review_time": "October 17, 2026 at 5:34 PM PDT.",
+    "title": "Saturday Evening \u00b7 Oct 17, 2026",
+    "review_time": "",
     "path": "trmnl/briefs/2026-10-17-evening/",
     "source": "2026-10-17-evening.md"
+  },
+  {
+    "date": "2026-10-18-morning",
+    "title": "Morning Brief - 2026-10-18",
+    "review_time": "October 18, 2026 at 7:28 AM PDT.",
+    "path": "trmnl/briefs/2026-10-18-morning/",
+    "source": "2026-10-18-morning.md"
+  },
+  {
+    "date": "2026-10-18-afternoon",
+    "title": "Afternoon Brief \u2014 2026-10-18",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-18-afternoon/",
+    "source": "2026-10-18-afternoon.md"
   }
 ]

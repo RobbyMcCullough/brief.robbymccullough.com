@@ -2282,6 +2282,13 @@
     "source": "2026-10-16-evening.md"
   },
   {
+    "date": "2026-10-17",
+    "title": "Evening Brief \u2014 October 17, 2026",
+    "review_time": "October 17, 2026 at 5:34 PM PDT.",
+    "path": "briefs/2026-10-17/",
+    "source": "2026-10-17.md"
+  },
+  {
     "date": "2026-10-17-morning",
     "title": "Daily Brief: October 17, 2026 \u2014 Morning",
     "review_time": "October 17, 2026 at 7:28 AM PDT.",
@@ -2301,5 +2308,19 @@
     "review_time": "October 17, 2026 at 5:34 PM PDT.",
     "path": "briefs/2026-10-17-evening/",
     "source": "2026-10-17-evening.md"
+  },
+  {
+    "date": "2026-10-18-morning",
+    "title": "Daily Brief: October 18, 2026 \u2014 Morning",
+    "review_time": "October 18, 2026 at 7:28 AM PDT.",
+    "path": "briefs/2026-10-18-morning/",
+    "source": "2026-10-18-morning.md"
+  },
+  {
+    "date": "2026-10-18-afternoon",
+    "title": "Daily Brief: October 18, 2026 \u2014 Afternoon",
+    "review_time": "October 18, 2026 at 12:28 PM PDT.",
+    "path": "briefs/2026-10-18-afternoon/",
+    "source": "2026-10-18-afternoon.md"
   }
 ]
