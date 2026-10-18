@@ -2294,5 +2294,12 @@
     "review_time": "October 17, 2026 at 12:31 PM PDT.",
     "path": "briefs/2026-10-17-afternoon/",
     "source": "2026-10-17-afternoon.md"
+  },
+  {
+    "date": "2026-10-17-evening",
+    "title": "Evening Brief \u2014 October 17, 2026",
+    "review_time": "October 17, 2026 at 5:34 PM PDT.",
+    "path": "briefs/2026-10-17-evening/",
+    "source": "2026-10-17-evening.md"
   }
 ]
