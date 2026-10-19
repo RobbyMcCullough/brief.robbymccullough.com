@@ -2322,5 +2322,12 @@
     "review_time": "October 18, 2026 at 12:28 PM PDT.",
     "path": "briefs/2026-10-18-afternoon/",
     "source": "2026-10-18-afternoon.md"
+  },
+  {
+    "date": "2026-10-18-evening",
+    "title": "Daily Brief: October 18, 2026 \u2014 Evening",
+    "review_time": "October 18, 2026 at 5:34 PM PDT.",
+    "path": "briefs/2026-10-18-evening/",
+    "source": "2026-10-18-evening.md"
   }
 ]
