@@ -2331,10 +2331,24 @@
     "source": "2026-10-18-evening.md"
   },
   {
+    "date": "2026-10-19-afternoon",
+    "title": "Daily Brief: October 19, 2026 \u2014 Afternoon",
+    "review_time": "October 19, 2026 at 12:35 PM PDT.",
+    "path": "briefs/2026-10-19-afternoon/",
+    "source": "2026-10-19-afternoon.md"
+  },
+  {
     "date": "2026-10-19-evening",
     "title": "Daily Brief: October 19, 2026 \u2014 Evening",
-    "review_time": "October 19, 2026 at 5:33 PM PDT.",
+    "review_time": "October 19, 2026 at 5:35 PM PDT.",
     "path": "briefs/2026-10-19-evening/",
     "source": "2026-10-19-evening.md"
+  },
+  {
+    "date": "2026-10-20-morning",
+    "title": "Daily Brief: October 20, 2026 \u2014 Morning",
+    "review_time": "October 20, 2026 at 7:30 AM PDT.",
+    "path": "briefs/2026-10-20-morning/",
+    "source": "2026-10-20-morning.md"
   }
 ]

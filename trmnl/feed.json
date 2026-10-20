@@ -2275,10 +2275,24 @@
     "source": "2026-10-18-evening.md"
   },
   {
+    "date": "2026-10-19-afternoon",
+    "title": "Afternoon Brief \u2014 2026-10-19",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-19-afternoon/",
+    "source": "2026-10-19-afternoon.md"
+  },
+  {
     "date": "2026-10-19-evening",
-    "title": "Evening Brief \u2014 2026-10-19",
+    "title": "Evening Brief \u2014 Monday, October 19",
     "review_time": "",
     "path": "trmnl/briefs/2026-10-19-evening/",
     "source": "2026-10-19-evening.md"
+  },
+  {
+    "date": "2026-10-20-morning",
+    "title": "Morning Brief \u2014 Tuesday, October 20",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-20-morning/",
+    "source": "2026-10-20-morning.md"
   }
 ]
