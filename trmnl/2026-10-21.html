@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1872, initial-scale=1">
+  <title>Evening Brief — Oct. 21</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/site-icon-512.png">
+  <style>
+    :root {
+      --paper: #fff;
+      --ink: #000;
+      --muted: #000;
+      --soft: #000;
+      --rule: #000;
+      --subtle-rule: #111;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      width: 1872px;
+      height: 1404px;
+      overflow: hidden;
+      background: var(--paper);
+    }
+
+    .terminal-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-width: 0;
+      padding: 42px 56px 30px;
+    }
+
+    .topbar {
+      align-items: end;
+      display: flex;
+      justify-content: space-between;
+      min-height: 122px;
+    }
+
+    .topbar-overline {
+      color: var(--ink);
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: 0.075em;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+    }
+
+    .topbar h1 {
+      font-size: 82px;
+      font-weight: 900;
+      letter-spacing: -0.075em;
+      line-height: 0.88;
+      margin: 0;
+    }
+
+    .topbar time {
+      color: var(--ink);
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 0.025em;
+      margin-bottom: 8px;
+      text-align: right;
+    }
+
+    .lede {
+      border: none;
+      border-radius: 0;
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 1.13fr 0.87fr;
+      margin-top: 30px;
+      overflow: visible;
+    }
+
+    .lede-card {
+      border: 3px solid var(--rule);
+      border-radius: 7px;
+      min-height: 188px;
+      padding: 22px 26px 23px;
+    }
+
+    .label {
+      color: var(--ink);
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: 0.075em;
+      margin: 0 0 15px;
+      text-transform: uppercase;
+    }
+
+    .lede-text {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.18;
+      margin: 0;
+    }
+
+    .grid {
+      align-items: stretch;
+      display: grid;
+      flex: 1;
+      gap: 24px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 24px;
+      min-height: 0;
+    }
+
+    .column {
+      display: grid;
+      grid-auto-rows: minmax(min-content, 1fr);
+      gap: 20px;
+      min-width: 0;
+    }
+
+    section {
+      border: 3px solid var(--rule);
+      border-radius: 7px;
+      overflow: hidden;
+    }
+
+    h2 {
+      background: var(--soft);
+      border-bottom: 3px solid var(--rule);
+      color: #fff;
+      font-size: 25px;
+      font-weight: 900;
+      letter-spacing: 0.07em;
+      margin: 0;
+      padding: 16px 20px 15px;
+      text-transform: uppercase;
+    }
+
+    article {
+      padding: 16px 20px 18px;
+    }
+
+    article + article { border-top: 2px solid var(--subtle-rule); }
+
+    .head {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      line-height: 1.14;
+      margin: 0;
+    }
+
+    .body, .detail, .meta {
+      color: var(--ink);
+      font-size: 22px;
+      font-weight: 650;
+      letter-spacing: -0.012em;
+      line-height: 1.28;
+      margin: 8px 0 0;
+    }
+
+    .terminal-section-sports {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .terminal-section-sports h2 {
+      grid-column: 1 / -1;
+    }
+
+    .terminal-section-sports article {
+      border-top: 2px solid var(--subtle-rule);
+      padding: 16px 18px 18px;
+    }
+
+    .terminal-section-sports article:nth-of-type(1),
+    .terminal-section-sports article:nth-of-type(2) {
+      border-top: none;
+    }
+
+    .terminal-section-sports article:nth-of-type(even) {
+      border-left: 2px solid var(--subtle-rule);
+    }
+
+    .terminal-section-sports .head {
+      font-size: 25px;
+    }
+
+    .terminal-section-sports .body {
+      font-size: 20px;
+      line-height: 1.25;
+    }
+
+    </style>
+</head>
+<body>
+  <main>
+    <div class="terminal-content">
+      <header class="topbar">
+        <div>
+          <p class="topbar-overline">Robby McCullough · personal brand desk</p>
+          <h1>Evening Brief</h1>
+        </div>
+        <time>October 21, 2026 at 5:27 PM</time>
+      </header>
+
+      <section class="lede">
+        <article class="lede-card">
+          <p class="label">Top Line</p>
+          <p class="lede-text">PHP security updates roll through package channels; verify the build actually running on your sites.</p>
+        </article>
+        <article class="lede-card">
+          <p class="label">Weather</p>
+          <p class="lede-text">Petaluma: showers tonight and Thursday, then sunny Friday and warm this weekend. Tahoe stays cool and wet through Thursday.</p>
+        </article>
+      </section>
+
+      <div class="grid">
+        <div class="column">
+    <section class="terminal-section terminal-section-business-news">
+      <h2>Business News</h2>
+
+            <article>
+              <p class="head">PHP operators are comparing upstream releases with distro backports. Check the installed version and host restart status.</p>
+
+            </article>
+
+    </section>
+    </div>
+<div class="column">
+    <section class="terminal-section terminal-section-local-this-week">
+      <h2>Local This Week</h2>
+
+            <article>
+              <p class="head">Western Hoedown — Fri, Oct. 23, 5–10:15 PM · Petaluma Woman&#x27;s Club</p>
+              <p class="body">LumaFest — Sat, Oct. 24, 11 AM–3 PM · SRJC Petaluma</p><p class="body">Cider Circus — Sat, Oct. 24, noon–5 PM · Steamer Landing Park</p>
+            </article>
+
+    </section>
+
+
+    <section class="terminal-section terminal-section-sports">
+      <h2>Sports</h2>
+
+            <article>
+              <p class="head">49ers (6–0) at Atlanta Sunday, Oct. 25, 10 AM PDT.</p>
+              <p class="body">World Series Game 1: Tampa Bay at Milwaukee, Friday, 5 PM PDT.</p>
+            </article>
+
+    </section>
+    </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
