@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Brief: October 22, 2026 — Morning</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/site-icon-512.png">
+  <style>
+    :root {
+      --paper: #fbfaf3;
+      --paper-shadow: #dedbd0;
+      --ink: #111;
+      --muted: #333;
+      --rule: rgba(17, 17, 17, 0.44);
+      --rule-strong: #111;
+      --accent: #111;
+      --shadow: 0 18px 46px rgba(0, 0, 0, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Georgia", "Times New Roman", serif;
+      background: var(--paper-shadow);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(0, 0, 0, 0.06) 0.5px, transparent 0.7px);
+      background-size: 4px 4px;
+      opacity: 0.09;
+    }
+
+    main {
+      width: min(1380px, calc(100vw - 32px));
+      min-height: calc(100vh - 32px);
+      margin: 16px auto 32px;
+      position: relative;
+      z-index: 1;
+      background: var(--paper);
+      border: 2px solid rgba(17, 17, 17, 0.72);
+      box-shadow: var(--shadow);
+      padding: 18px 24px 26px;
+    }
+
+    .masthead {
+      display: grid;
+      gap: 9px;
+      border-bottom: 5px double var(--rule-strong);
+      padding-bottom: 10px;
+    }
+
+    .eyebrow {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ink);
+      border-top: 4px solid var(--rule-strong);
+      border-bottom: 2px solid var(--rule-strong);
+      padding: 6px 0 5px;
+    }
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-size: clamp(3.2rem, 5.6vw, 5.9rem);
+      line-height: 0.92;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .edition-title {
+      margin: 0;
+      text-align: center;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-top: 2px solid var(--rule-strong);
+      border-bottom: 2px solid var(--rule-strong);
+    }
+
+    .hero-card {
+      padding: 12px 16px 11px;
+      min-height: 94px;
+      border-right: 2px solid var(--rule);
+    }
+
+    .hero-card:last-child { border-right: none; }
+
+    .hero-card .label {
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .hero-card .value {
+      margin: 0;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-size: clamp(1.22rem, 1.55vw, 1.62rem);
+      line-height: 1.16;
+      font-weight: 600;
+      text-wrap: balance;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 800;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: 1.18fr 0.96fr 0.96fr;
+      gap: 0;
+      margin-top: 14px;
+      align-items: start;
+    }
+
+    .paper-column {
+      display: grid;
+      align-content: start;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .paper-column + .paper-column {
+      border-left: 2px solid var(--rule);
+      padding-left: 20px;
+      margin-left: 20px;
+    }
+
+    .section {
+      padding-top: 9px;
+      border-top: 5px double var(--rule-strong);
+      break-inside: avoid;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--rule);
+    }
+
+    h2 {
+      margin: 0;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .section-body { display: grid; gap: 10px; }
+
+    .card {
+      border-top: 2px solid var(--rule);
+      padding-top: 8px;
+    }
+
+    .card:first-child { border-top: none; padding-top: 0; }
+
+    .head {
+      margin: 0 0 4px;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-weight: 600;
+      line-height: 1.2;
+      font-size: 1.12rem;
+    }
+
+    .meta, .detail, .body {
+      margin: 6px 0 0;
+      line-height: 1.36;
+      color: var(--ink);
+      font-size: 0.98rem;
+    }
+
+    .meta {
+      color: var(--ink);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      font-weight: 900;
+    }
+
+    .section-best-bets .head { font-size: 1.14rem; }
+    .section-best-bets .card:first-child .head {
+      font-size: 1.55rem;
+      line-height: 1.12;
+      font-weight: 700;
+    }
+
+    .section-best-bets .card:not(:first-child) .head {
+      font-size: 1rem;
+      line-height: 1.26;
+      font-weight: 500;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { background: rgba(0, 0, 0, 0.08); }
+
+    code {
+      font-family: "Courier New", "Courier", monospace;
+      font-size: 0.88em;
+      background: rgba(0, 0, 0, 0.07);
+      padding: 0.03rem 0.18rem;
+      border: 1px solid rgba(0, 0, 0, 0.22);
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-top: 2px solid var(--rule);
+      padding-top: 9px;
+    }
+
+    @media (min-width: 1500px) {
+      main {
+        width: min(1480px, calc(100vw - 48px));
+        margin: 20px auto 36px;
+        padding: 22px 30px 32px;
+      }
+
+      h1 { font-size: 94px; }
+      .edition-title { font-size: 15px; }
+      .hero-card .value { font-size: 27px; }
+      .head { font-size: 20px; }
+      .section-best-bets .card:first-child .head { font-size: 29px; }
+      .section-best-bets .card:not(:first-child) .head { font-size: 18px; }
+      .meta, .detail, .body { font-size: 17px; line-height: 1.36; }
+      .meta { font-size: 13px; }
+    }
+
+    @media (max-width: 1020px) {
+      .sections { grid-template-columns: 1fr; gap: 12px; }
+      .paper-column + .paper-column {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      main {
+        width: min(100vw - 16px, 980px);
+        margin: 8px auto 20px;
+        padding: 14px 14px 18px;
+      }
+      h1 { font-size: clamp(3rem, 13vw, 5rem); }
+      .eyebrow { font-size: 11px; }
+      .hero-card .value { font-size: 1.35rem; }
+      .hero-card {
+        border-right: none;
+        border-bottom: 2px solid var(--rule);
+      }
+      .hero-card:last-child { border-bottom: none; }
+    }
+    </style>
+</head>
+<body>
+  <main>
+    <section class="masthead">
+      <div class="eyebrow">
+        <span>Robby McCullough Morning Brief</span>
+        <span>Personal Brand Desk</span>
+        <span>October 22, 2026 at 7:32 AM PDT.</span>
+      </div>
+      <h1>The Morning Brief</h1>
+      <p class="edition-title">Daily Brief: October 22, 2026 — Morning</p>
+      <div class="hero-grid">
+        <article class="hero-card">
+          <p class="label">Forecast</p>
+          <p class="value">Petaluma has a cool, rainy morning, then turns sunny Friday and warm through the weekend; the Sierra is wetter and much cooler today.</p>
+        </article>
+        <article class="hero-card">
+          <p class="label">Lead Assignment</p>
+          <p class="value">Set a reminder for any Thursday game lineup locks by 5:15 PM; no fresh conversation cleared the reply bar.</p>
+        </article>
+      </div>
+      <div class="meta-row">
+        <span>Rendered from Markdown brief</span>
+        <span><a href="./source.md">Open source file</a></span>
+        <span>Generated October 22, 2026 at 8:36 AM</span>
+      </div>
+    </section>
+
+    <section class="sections">
+      <div class="paper-column lead-column">
+    <section class="section section-best-bets">
+      <div class="section-head">
+        <h2>Best Bets</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card best-bet">
+              <p class="head">No current thread cleared the freshness, activity, and firsthand-fit checks.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-radar">
+      <div class="section-head">
+        <h2>Radar</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head"><a href="https://delhi.wordcamp.org/2026/call-for-speakers-open/" target="_blank" rel="noreferrer">WordCamp Delhi 2026 speaker call</a> — applications close Oct. 25. <code>speak</code></p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://www.tonyphoang.com/guest/" target="_blank" rel="noreferrer">The Artificial Intelligence Podcast guest call</a> — still accepting guests; an operator story about bringing AI into an established WordPress company fits. <code>pitch</code></p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://canada.wordcamp.org/2026/" target="_blank" rel="noreferrer">WordCamp Canada</a> — Vancouver, Nov. 5–6; review the program before deciding. <code>attend</code></p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://mumbai.wordcamp.org/2027/call-for-speakers/" target="_blank" rel="noreferrer">WordCamp Mumbai 2027 speaker call</a> — Nov. 30 deadline; WordPress business, design, and open-web stories welcome. <code>speak</code></p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    </div>
+<div class="paper-column middle-column">
+    <section class="section section-weather">
+      <div class="section-head">
+        <h2>Weather</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head"><a href="https://api.weather.gov/gridpoints/MTR/81,127/forecast" target="_blank" rel="noreferrer">NWS Petaluma forecast</a>: rain likely before noon, then mostly cloudy; sunny Friday and a sunny, warmer weekend. <a href="https://api.weather.gov/gridpoints/MTR/91,89/forecast" target="_blank" rel="noreferrer">Palo Alto</a> and <a href="https://api.weather.gov/gridpoints/STO/50,74/forecast" target="_blank" rel="noreferrer">Roseville</a> also have showers or thunderstorms today; <a href="https://api.weather.gov/gridpoints/REV/34,81/forecast" target="_blank" rel="noreferrer">Tahoe</a> is chilly with showers and thunderstorms.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://weatherwest.com/" target="_blank" rel="noreferrer">Weather West</a> has no newer post than its Oct. 12 seasonal outlook: a historically strong El Niño tilts winter odds very wet, while fall rain remains hard to infer from it. Recent reader comments report uneven, generally below-forecast totals in parts of the Southland and western Nevada; anecdotal, not station-verified.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://radar.weather.gov/station/MUX" target="_blank" rel="noreferrer">Bay Area radar</a>.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-local-don-t-miss">
+      <div class="section-head">
+        <h2>Local / Don&#x27;t Miss</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">Fri, Oct. 23 — <a href="https://www.petalumawomansclub.com/events/" target="_blank" rel="noreferrer">Western Hoedown Dinner and Dance</a> · 5–10:15 PM, Petaluma Woman&#x27;s Club, 518 B St.; Third Rail live.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">Sat, Oct. 24 — <a href="https://dia.santarosa.edu/" target="_blank" rel="noreferrer">LumaFest</a> · 11 AM–3 PM, SRJC Petaluma; free admission and parking.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">Sat, Oct. 24 — <a href="https://fopr.org/all-events/cider-circus-2026" target="_blank" rel="noreferrer">Cider Circus</a> · noon–5 PM, Steamer Landing Park; local cider and riverfront setting.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    </div>
+<div class="paper-column right-column">
+    <section class="section section-sports">
+      <div class="section-head">
+        <h2>Sports</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head"><a href="https://www.nfl.com/teams/san-francisco-49ers/" target="_blank" rel="noreferrer">49ers</a>: 6–0, first in the NFC West; at Atlanta Sunday, Oct. 25, 10 AM PDT. <code>watch</code></p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule" target="_blank" rel="noreferrer">World Series</a>: Rays at Brewers, Game 1 Friday at 5 PM PDT. <code>watch</code></p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">Yahoo Fantasy was refreshed read-only. Thursday&#x27;s early game locks at 5:15 PM; no new player-status change verified for this brief.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-new-today">
+      <div class="section-head">
+        <h2>New Today</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head"><a href="https://www.google.com/finance/quote/SPY:NYSEARCA" target="_blank" rel="noreferrer">SPY</a> was down about 1.0% and <a href="https://www.google.com/finance/quote/BTC-USD" target="_blank" rel="noreferrer">Bitcoin</a> about 2.7% at the 7:17 AM PDT snapshot.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head"><a href="https://apnews.com/article/cca9a495def940aaa1852ec728dc3241" target="_blank" rel="noreferrer">AP reports</a> 2–3-inch hail and rare tornado warnings in Arizona; NWS has a flood watch posted for Heber-Overgaard through Thursday evening.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-reply-guidance">
+      <div class="section-head">
+        <h2>Reply Guidance</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">No reply recommended this morning. Hacker News surfaced a WordPress-hosted project update with no comments; Reddit&#x27;s newest results were removed or too old to qualify, and X/Twitter results had no verifiable recent activity.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-coverage-note">
+      <div class="section-head">
+        <h2>Coverage Note</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">**Conversations:** Hacker News, Reddit, and X/Twitter were checked. HN&#x27;s only fresh WordPress result had no comments. Reddit&#x27;s public API returned 403; search results exposed no fresh, fit-qualified discussion with verifiable latest-reply timing. X search did not provide reliable post timing, so no X item is recommended.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">**Local:** Rechecked Visit Petaluma, Petaluma Woman&#x27;s Club, Friends of the Petaluma River, and SRJC&#x27;s official LumaFest page; the three weekend listings above have verified dates, times, and venues. Monday&#x27;s broader scan still had access gaps at Downtown, Fairgrounds, Old Caz, Phoenix, Grand Central, and Mail Depot.</p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">**Other:** NWS forecasts and radar, Weather West&#x27;s latest post and live Disqus feed, NFL/49ers and MLB schedules, current market quotes, and the signed-in Yahoo roster were checked. Monday&#x27;s weekly-priority synthesis carries forward without a material change; cloud-only ChatGPT or Claude project activity may be absent.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    </div>
+    </section>
+
+    <p class="footer">Daily brief archive: 2026-10-22-morning</p>
+  </main>
+</body>
+</html>
