@@ -2350,5 +2350,26 @@
     "review_time": "October 23, 2026 at 8:05 AM PDT.",
     "path": "trmnl/briefs/2026-10-23-morning/",
     "source": "2026-10-23-morning.md"
+  },
+  {
+    "date": "2026-10-23-afternoon",
+    "title": "Afternoon Brief - 2026-10-23",
+    "review_time": "October 23, 2026 at 12:27 PM PDT.",
+    "path": "trmnl/briefs/2026-10-23-afternoon/",
+    "source": "2026-10-23-afternoon.md"
+  },
+  {
+    "date": "2026-10-23-evening",
+    "title": "Evening Brief - 2026-10-23",
+    "review_time": "October 23, 2026 at 5:25 PM PDT.",
+    "path": "trmnl/briefs/2026-10-23-evening/",
+    "source": "2026-10-23-evening.md"
+  },
+  {
+    "date": "2026-10-24-morning",
+    "title": "Saturday Brief \u2014 October 24, 2026",
+    "review_time": "7:28 AM PDT",
+    "path": "trmnl/briefs/2026-10-24-morning/",
+    "source": "2026-10-24-morning.md"
   }
 ]

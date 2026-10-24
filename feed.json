@@ -2413,5 +2413,19 @@
     "review_time": "October 23, 2026 at 12:27 PM PDT.",
     "path": "briefs/2026-10-23-afternoon/",
     "source": "2026-10-23-afternoon.md"
+  },
+  {
+    "date": "2026-10-23-evening",
+    "title": "Daily Brief: October 23, 2026 \u2014 Evening",
+    "review_time": "October 23, 2026 at 5:25 PM PDT.",
+    "path": "briefs/2026-10-23-evening/",
+    "source": "2026-10-23-evening.md"
+  },
+  {
+    "date": "2026-10-24-morning",
+    "title": "Daily Brief: October 24, 2026 \u2014 Morning",
+    "review_time": "7:28 AM PDT",
+    "path": "briefs/2026-10-24-morning/",
+    "source": "2026-10-24-morning.md"
   }
 ]
