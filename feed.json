@@ -2427,5 +2427,12 @@
     "review_time": "7:28 AM PDT",
     "path": "briefs/2026-10-24-morning/",
     "source": "2026-10-24-morning.md"
+  },
+  {
+    "date": "2026-10-24-afternoon",
+    "title": "Daily Brief: October 24, 2026 \u2014 Afternoon",
+    "review_time": "12:27 PM PDT",
+    "path": "briefs/2026-10-24-afternoon/",
+    "source": "2026-10-24-afternoon.md"
   }
 ]
