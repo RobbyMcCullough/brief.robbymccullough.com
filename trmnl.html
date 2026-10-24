@@ -115,16 +115,17 @@
       align-items: stretch;
       display: grid;
       flex: 1;
-      gap: 24px;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       margin-top: 24px;
       min-height: 0;
     }
 
     .column {
       display: grid;
-      grid-auto-rows: minmax(min-content, 1fr);
-      gap: 20px;
+      align-content: start;
+      grid-auto-rows: max-content;
+      gap: 16px;
       min-width: 0;
     }
 
@@ -138,7 +139,7 @@
       background: var(--soft);
       border-bottom: 3px solid var(--rule);
       color: #fff;
-      font-size: 25px;
+      font-size: 28px;
       font-weight: 900;
       letter-spacing: 0.07em;
       margin: 0;
@@ -153,7 +154,7 @@
     article + article { border-top: 2px solid var(--subtle-rule); }
 
     .head {
-      font-size: 28px;
+      font-size: 32px;
       font-weight: 900;
       letter-spacing: -0.035em;
       line-height: 1.14;
@@ -162,7 +163,7 @@
 
     .body, .detail, .meta {
       color: var(--ink);
-      font-size: 22px;
+      font-size: 26px;
       font-weight: 650;
       letter-spacing: -0.012em;
       line-height: 1.28;
@@ -193,11 +194,11 @@
     }
 
     .terminal-section-sports .head {
-      font-size: 25px;
+      font-size: 28px;
     }
 
     .terminal-section-sports .body {
-      font-size: 20px;
+      font-size: 23px;
       line-height: 1.25;
     }
 
@@ -236,6 +237,23 @@
             </article>
 
     </section>
+
+
+    <section class="terminal-section terminal-section-game-news">
+      <h2>Game News</h2>
+
+            <article>
+              <p class="head">WoW: Forever character names</p>
+              <p class="body">Blizzard opens eligible early name reservations Oct. 27–Nov. 3; up to three names can be reserved across rulesets. Launch is Nov. 4.</p>
+            </article>
+
+
+            <article>
+              <p class="head">WoW: Forever rulesets</p>
+              <p class="body">Blizzard added Roleplay-PvP to the Nov. 4 launch and Oct. 27 reservation window.</p>
+            </article>
+
+    </section>
     </div>
 <div class="column">
     <section class="terminal-section terminal-section-local-this-week">
@@ -259,8 +277,8 @@
             </article>
 
     </section>
-
-
+    </div>
+<div class="column">
     <section class="terminal-section terminal-section-sports">
       <h2>Sports</h2>
 
