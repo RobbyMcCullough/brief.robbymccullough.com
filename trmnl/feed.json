@@ -2462,5 +2462,26 @@
     "review_time": "",
     "path": "trmnl/briefs/2026-10-28-afternoon/",
     "source": "2026-10-28-afternoon.md"
+  },
+  {
+    "date": "2026-10-28-evening",
+    "title": "Wednesday, October 28",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-28-evening/",
+    "source": "2026-10-28-evening.md"
+  },
+  {
+    "date": "2026-10-29-morning",
+    "title": "Thursday, October 29",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-29-morning/",
+    "source": "2026-10-29-morning.md"
+  },
+  {
+    "date": "2026-10-29-afternoon",
+    "title": "Thursday, October 29 \u2014 Afternoon",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-29-afternoon/",
+    "source": "2026-10-29-afternoon.md"
   }
 ]
