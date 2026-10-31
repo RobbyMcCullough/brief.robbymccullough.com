@@ -2497,5 +2497,19 @@
     "review_time": "",
     "path": "trmnl/briefs/2026-10-30-morning/",
     "source": "2026-10-30-morning.md"
+  },
+  {
+    "date": "2026-10-30-afternoon",
+    "title": "Friday, October 30",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-10-30-afternoon/",
+    "source": "2026-10-30-afternoon.md"
+  },
+  {
+    "date": "2026-10-30-evening",
+    "title": "Friday, October 30",
+    "review_time": "5:28 PM PDT",
+    "path": "trmnl/briefs/2026-10-30-evening/",
+    "source": "2026-10-30-evening.md"
   }
 ]
