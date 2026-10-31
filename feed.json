@@ -2574,5 +2574,12 @@
     "review_time": "7:35 AM PDT",
     "path": "briefs/2026-10-31-morning/",
     "source": "2026-10-31-morning.md"
+  },
+  {
+    "date": "2026-10-31-afternoon",
+    "title": "Daily Brief: October 31, 2026 \u2014 Afternoon",
+    "review_time": "12:33 PM PDT",
+    "path": "briefs/2026-10-31-afternoon/",
+    "source": "2026-10-31-afternoon.md"
   }
 ]
