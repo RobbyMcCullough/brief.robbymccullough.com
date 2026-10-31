@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1872, initial-scale=1">
+  <title>Saturday, October 31</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/site-icon-512.png">
+  <style>
+    :root {
+      --paper: #fff;
+      --ink: #000;
+      --muted: #000;
+      --soft: #000;
+      --rule: #000;
+      --subtle-rule: #111;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      width: 1872px;
+      height: 1404px;
+      overflow: hidden;
+      background: var(--paper);
+    }
+
+    .terminal-content {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-width: 0;
+      padding: 42px 56px 30px;
+    }
+
+    .topbar {
+      align-items: end;
+      display: flex;
+      justify-content: space-between;
+      min-height: 122px;
+    }
+
+    .topbar-overline {
+      color: var(--ink);
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: 0.075em;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+    }
+
+    .topbar h1 {
+      font-size: 82px;
+      font-weight: 900;
+      letter-spacing: -0.075em;
+      line-height: 0.88;
+      margin: 0;
+    }
+
+    .topbar time {
+      color: var(--ink);
+      font-size: 21px;
+      font-weight: 800;
+      letter-spacing: 0.025em;
+      margin-bottom: 8px;
+      text-align: right;
+    }
+
+    .lede {
+      border: none;
+      border-radius: 0;
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 1.13fr 0.87fr;
+      margin-top: 30px;
+      overflow: visible;
+    }
+
+    .lede-card {
+      border: 3px solid var(--rule);
+      border-radius: 7px;
+      min-height: 188px;
+      padding: 22px 26px 23px;
+    }
+
+    .label {
+      color: var(--ink);
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: 0.075em;
+      margin: 0 0 15px;
+      text-transform: uppercase;
+    }
+
+    .lede-text {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: -0.035em;
+      line-height: 1.18;
+      margin: 0;
+    }
+
+    .grid {
+      align-items: stretch;
+      display: grid;
+      flex: 1;
+      gap: 18px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      margin-top: 24px;
+      min-height: 0;
+    }
+
+    .column {
+      display: grid;
+      align-content: space-between;
+      grid-auto-rows: max-content;
+      gap: 16px;
+      min-width: 0;
+    }
+
+    section {
+      border: 3px solid var(--rule);
+      border-radius: 7px;
+      overflow: hidden;
+    }
+
+    h2 {
+      background: var(--soft);
+      border-bottom: 3px solid var(--rule);
+      color: #fff;
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: 0.07em;
+      margin: 0;
+      padding: 16px 20px 15px;
+      text-transform: uppercase;
+    }
+
+    article {
+      padding: 16px 20px 18px;
+    }
+
+    article + article { border-top: 2px solid var(--subtle-rule); }
+
+    .head {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: -0.035em;
+      line-height: 1.14;
+      margin: 0;
+    }
+
+    .body, .detail, .meta {
+      color: var(--ink);
+      font-size: 26px;
+      font-weight: 650;
+      letter-spacing: -0.012em;
+      line-height: 1.28;
+      margin: 8px 0 0;
+    }
+
+    .terminal-section-sports {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .terminal-section-sports h2 {
+      grid-column: 1 / -1;
+    }
+
+    .terminal-section-sports article {
+      border-top: 2px solid var(--subtle-rule);
+      padding: 16px 18px 18px;
+    }
+
+    .terminal-section-sports article:nth-of-type(1),
+    .terminal-section-sports article:nth-of-type(2) {
+      border-top: none;
+    }
+
+    .terminal-section-sports article:nth-of-type(even) {
+      border-left: 2px solid var(--subtle-rule);
+    }
+
+    .terminal-section-sports .head {
+      font-size: 28px;
+    }
+
+    .terminal-section-sports .body {
+      font-size: 23px;
+      line-height: 1.25;
+    }
+
+    </style>
+</head>
+<body>
+  <main>
+    <div class="terminal-content">
+      <header class="topbar">
+        <div>
+          <p class="topbar-overline">Robby McCullough · personal brand desk</p>
+          <h1>Morning Brief</h1>
+        </div>
+        <time>October 31, 2026 at 8:16 AM</time>
+      </header>
+
+      <section class="lede">
+        <article class="lede-card">
+          <p class="label">Top Line</p>
+          <p class="lede-text">Halloween starts foggy in Petaluma; tonight brings a shower chance and coastal flood risk remains through Sunday evening.</p>
+        </article>
+        <article class="lede-card">
+          <p class="label">Weather</p>
+          <p class="lede-text">Fog before 10 AM, then partly sunny near 64°F. A 40% shower chance tonight; Coastal Flood Advisory through Sunday at 6 PM.</p>
+        </article>
+      </section>
+
+      <div class="grid">
+        <div class="column">
+    <section class="terminal-section terminal-section-world-u-s">
+      <h2>World / U.S.</h2>
+
+            <article>
+              <p class="head">A moisture-rich system may add to Four Corners flooding; November leans wetter than average, while stronger El Niño effects usually arrive later.</p>
+
+            </article>
+
+    </section>
+
+
+    <section class="terminal-section terminal-section-business-web">
+      <h2>Business / Web</h2>
+
+            <article>
+              <p class="head">DeepSeek has opened the source for dsh-superagent, a coding-agent prototype described as largely built by agents.</p>
+
+            </article>
+
+    </section>
+
+
+    <section class="terminal-section terminal-section-game-news">
+      <h2>Game News</h2>
+
+            <article>
+              <p class="head">World of Warcraft: Forever launches November 4 at 3 PM PST; included with game time or subscription.</p>
+
+            </article>
+
+    </section>
+    </div>
+<div class="column">
+    <section class="terminal-section terminal-section-local-this-week">
+      <h2>Local This Week</h2>
+
+            <article>
+              <p class="head">River Park Weekend Walk · Sat, 9–10 AM · Steamer Landing</p>
+              <p class="body">Trick or Treat Trail · Sat, 3–5 PM · Downtown Petaluma</p><p class="body">Edú Bega Band · Sat, 8:30 PM · Mystic Theatre</p>
+            </article>
+
+    </section>
+    </div>
+<div class="column">
+    <section class="terminal-section terminal-section-weather">
+      <h2>Weather</h2>
+
+            <article>
+              <p class="head">NWS: sunny Sunday after morning fog, then a better chance of rain Tuesday. Weather West’s newest California take is seasonal; a reader noted overnight jet amplification before the Southern California storm.</p>
+
+            </article>
+
+    </section>
+
+
+    <section class="terminal-section terminal-section-sports">
+      <h2>Sports</h2>
+
+            <article>
+              <p class="head">49ers are 6–1 and on bye this weekend; next game is at home against the Raiders on November 8.</p>
+
+            </article>
+
+    </section>
+
+
+    <section class="terminal-section terminal-section-stock-market">
+      <h2>Stock Market</h2>
+
+            <article>
+              <p class="head">S&amp;P 500 −1.8% · Nasdaq −2.9% Friday; tech shares led the sell-off amid concern about AI spending.</p>
+
+            </article>
+
+    </section>
+    </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
