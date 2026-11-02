@@ -2546,5 +2546,12 @@
     "review_time": "",
     "path": "trmnl/briefs/2026-11-01-afternoon/",
     "source": "2026-11-01-afternoon.md"
+  },
+  {
+    "date": "2026-11-01-evening",
+    "title": "Sunday, November 1",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-11-01-evening/",
+    "source": "2026-11-01-evening.md"
   }
 ]
