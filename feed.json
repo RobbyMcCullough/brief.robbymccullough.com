@@ -2637,5 +2637,12 @@
     "review_time": "November 3, 2026 at 7:26 AM PST.",
     "path": "briefs/2026-11-03-morning/",
     "source": "2026-11-03-morning.md"
+  },
+  {
+    "date": "2026-11-03-afternoon",
+    "title": "Daily Brief: November 3, 2026 \u2014 Afternoon",
+    "review_time": "12:32 PM PST",
+    "path": "briefs/2026-11-03-afternoon/",
+    "source": "2026-11-03-afternoon.md"
   }
 ]
