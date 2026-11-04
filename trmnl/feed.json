@@ -2567,5 +2567,40 @@
     "review_time": "",
     "path": "trmnl/briefs/2026-11-02-afternoon/",
     "source": "2026-11-02-afternoon.md"
+  },
+  {
+    "date": "2026-11-02-evening",
+    "title": "Monday, November 2",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-11-02-evening/",
+    "source": "2026-11-02-evening.md"
+  },
+  {
+    "date": "2026-11-03-morning",
+    "title": "Morning Brief \u2014 Nov. 3, 2026",
+    "review_time": "Nov. 3, 2026 at 7:26 AM PST.",
+    "path": "trmnl/briefs/2026-11-03-morning/",
+    "source": "2026-11-03-morning.md"
+  },
+  {
+    "date": "2026-11-03-afternoon",
+    "title": "Tuesday, November 3",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-11-03-afternoon/",
+    "source": "2026-11-03-afternoon.md"
+  },
+  {
+    "date": "2026-11-03-evening",
+    "title": "Tuesday, November 3",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-11-03-evening/",
+    "source": "2026-11-03-evening.md"
+  },
+  {
+    "date": "2026-11-04-evening",
+    "title": "Wednesday, November 4",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-11-04-evening/",
+    "source": "2026-11-04-evening.md"
   }
 ]
