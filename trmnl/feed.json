@@ -2644,5 +2644,26 @@
     "review_time": "",
     "path": "trmnl/briefs/2026-11-08-morning/",
     "source": "2026-11-08-morning.md"
+  },
+  {
+    "date": "2026-11-08-afternoon",
+    "title": "Afternoon Brief \u00b7 Sunday, November 8, 2026",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-11-08-afternoon/",
+    "source": "2026-11-08-afternoon.md"
+  },
+  {
+    "date": "2026-11-08-evening",
+    "title": "Evening Brief - 2026-11-08",
+    "review_time": "November 8, 2026 at 5:25 PM PST.",
+    "path": "trmnl/briefs/2026-11-08-evening/",
+    "source": "2026-11-08-evening.md"
+  },
+  {
+    "date": "2026-11-09-morning",
+    "title": "Morning Brief \u2014 2026-11-09",
+    "review_time": "November 9, 2026 at 7:36 AM PST.",
+    "path": "trmnl/briefs/2026-11-09-morning/",
+    "source": "2026-11-09-morning.md"
   }
 ]
