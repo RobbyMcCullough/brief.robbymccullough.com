@@ -2672,5 +2672,12 @@
     "review_time": "Monday, November 9, 2026 at 12:28 PM PST.",
     "path": "trmnl/briefs/2026-11-09-afternoon/",
     "source": "2026-11-09-afternoon.md"
+  },
+  {
+    "date": "2026-11-09-evening",
+    "title": "Evening Brief \u2014 2026-11-09",
+    "review_time": "Monday, November 9, 2026 at 5:32 PM PST.",
+    "path": "trmnl/briefs/2026-11-09-evening/",
+    "source": "2026-11-09-evening.md"
   }
 ]
