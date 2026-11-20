@@ -2693,5 +2693,12 @@
     "review_time": "November 15, 2026 at 12:00 PM PST.",
     "path": "trmnl/briefs/2026-11-15-afternoon/",
     "source": "2026-11-15-afternoon.md"
+  },
+  {
+    "date": "2026-11-20-morning",
+    "title": "Morning Brief \u2014 2026-11-20",
+    "review_time": "November 20, 2026 at 9:00 AM PST.",
+    "path": "trmnl/briefs/2026-11-20-morning/",
+    "source": "2026-11-20-morning.md"
   }
 ]
