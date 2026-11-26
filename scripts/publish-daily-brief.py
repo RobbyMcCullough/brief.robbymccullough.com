@@ -64,7 +64,10 @@ def publish(generator: Path, include_latest_archive: bool, trmnl_only: bool) -> 
             if asset.exists():
                 copy_file(asset, SITE_ROOT / asset_name)
 
-        archive_dates = dates if include_latest_archive else dates[:-1]
+        # Historical archives are immutable. Re-copying every generated archive
+        # rewrites hundreds of files whenever the renderer changes. Publish only
+        # the current edition and leave existing archive files untouched.
+        archive_dates = [latest] if include_latest_archive else []
         briefs_dir = SITE_ROOT / "briefs"
         briefs_dir.mkdir(exist_ok=True)
         for date in archive_dates:
@@ -72,10 +75,6 @@ def publish(generator: Path, include_latest_archive: bool, trmnl_only: bool) -> 
                 public / "briefs" / date / "index.html",
                 briefs_dir / f"{date}.html",
             )
-
-        latest_archive = briefs_dir / f"{latest}.html"
-        if not include_latest_archive and latest_archive.exists():
-            latest_archive.unlink()
 
         feed = public / "feed.json"
         if feed.exists():
@@ -91,11 +90,13 @@ def publish(generator: Path, include_latest_archive: bool, trmnl_only: bool) -> 
         if trmnl_feed.exists():
             copy_file(trmnl_feed, trmnl_dir / "feed.json")
 
-        for archive in sorted(
-            (trmnl_public / "briefs").glob("*/index.html"),
-            key=lambda path: brief_sort_key(path.parent),
-        ):
-            copy_file(archive, trmnl_dir / f"{archive.parent.name}.html")
+        latest_trmnl = next(
+            (path for path in trmnl_public.glob("briefs/*/index.html")
+             if path.parent.name == latest),
+            None,
+        )
+        if latest_trmnl is not None:
+            copy_file(latest_trmnl, trmnl_dir / f"{latest}.html")
         print("Published TRMNL brief to trmnl.html.")
 
     if trmnl_only:
