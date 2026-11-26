@@ -2700,5 +2700,19 @@
     "review_time": "November 20, 2026 at 9:00 AM PST.",
     "path": "trmnl/briefs/2026-11-20-morning/",
     "source": "2026-11-20-morning.md"
+  },
+  {
+    "date": "2026-11-25-morning",
+    "title": "Morning Brief \u2014 2026-11-25",
+    "review_time": "November 25, 2026 at 8:56 AM PST.",
+    "path": "trmnl/briefs/2026-11-25-morning/",
+    "source": "2026-11-25-morning.md"
+  },
+  {
+    "date": "2026-11-26-morning",
+    "title": "Thanksgiving \u2014 Thursday, November 26",
+    "review_time": "",
+    "path": "trmnl/briefs/2026-11-26-morning/",
+    "source": "2026-11-26-morning.md"
   }
 ]
