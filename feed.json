@@ -2777,5 +2777,12 @@
     "review_time": "Thursday, November 26, 2026, 12:30 PM PST.",
     "path": "briefs/2026-11-26-afternoon/",
     "source": "2026-11-26-afternoon.md"
+  },
+  {
+    "date": "2026-11-26-evening",
+    "title": "Thanksgiving evening in Petaluma",
+    "review_time": "",
+    "path": "briefs/2026-11-26-evening/",
+    "source": "2026-11-26-evening.md"
   }
 ]
