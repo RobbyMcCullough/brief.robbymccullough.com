@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saturday at the Turning Basin</title>
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/site-icon-512.png">
+  <style>
+    :root {
+      --paper: #fbfaf3;
+      --paper-shadow: #dedbd0;
+      --ink: #111;
+      --muted: #333;
+      --rule: rgba(17, 17, 17, 0.44);
+      --rule-strong: #111;
+      --accent: #111;
+      --shadow: 0 18px 46px rgba(0, 0, 0, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Georgia", "Times New Roman", serif;
+      background: var(--paper-shadow);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(0, 0, 0, 0.06) 0.5px, transparent 0.7px);
+      background-size: 4px 4px;
+      opacity: 0.09;
+    }
+
+    main {
+      width: min(1380px, calc(100vw - 32px));
+      min-height: calc(100vh - 32px);
+      margin: 16px auto 32px;
+      position: relative;
+      z-index: 1;
+      background: var(--paper);
+      border: 2px solid rgba(17, 17, 17, 0.72);
+      box-shadow: var(--shadow);
+      padding: 18px 24px 26px;
+    }
+
+    .masthead {
+      display: grid;
+      gap: 9px;
+      border-bottom: 5px double var(--rule-strong);
+      padding-bottom: 10px;
+    }
+
+    .eyebrow {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ink);
+      border-top: 4px solid var(--rule-strong);
+      border-bottom: 2px solid var(--rule-strong);
+      padding: 6px 0 5px;
+    }
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-size: clamp(3.2rem, 5.6vw, 5.9rem);
+      line-height: 0.92;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .edition-title {
+      margin: 0;
+      text-align: center;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-top: 2px solid var(--rule-strong);
+      border-bottom: 2px solid var(--rule-strong);
+    }
+
+    .hero-card {
+      padding: 12px 16px 11px;
+      min-height: 94px;
+      border-right: 2px solid var(--rule);
+    }
+
+    .hero-card:last-child { border-right: none; }
+
+    .hero-card .label {
+      margin: 0 0 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .hero-card .value {
+      margin: 0;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-size: clamp(1.22rem, 1.55vw, 1.62rem);
+      line-height: 1.16;
+      font-weight: 600;
+      text-wrap: balance;
+    }
+
+    .meta-row {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 800;
+      justify-content: center;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: 1.18fr 0.96fr 0.96fr;
+      gap: 0;
+      margin-top: 14px;
+      align-items: start;
+    }
+
+    .paper-column {
+      display: grid;
+      align-content: start;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .paper-column + .paper-column {
+      border-left: 2px solid var(--rule);
+      padding-left: 20px;
+      margin-left: 20px;
+    }
+
+    .section {
+      padding-top: 9px;
+      border-top: 5px double var(--rule-strong);
+      break-inside: avoid;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      padding-bottom: 5px;
+      border-bottom: 2px solid var(--rule);
+    }
+
+    h2 {
+      margin: 0;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.92rem;
+      font-weight: 900;
+    }
+
+    .section-body { display: grid; gap: 10px; }
+
+    .card {
+      border-top: 2px solid var(--rule);
+      padding-top: 8px;
+    }
+
+    .card:first-child { border-top: none; padding-top: 0; }
+
+    .head {
+      margin: 0 0 4px;
+      font-family: "Baskerville", "Times New Roman", serif;
+      font-weight: 600;
+      line-height: 1.2;
+      font-size: 1.12rem;
+    }
+
+    .meta, .detail, .body {
+      margin: 6px 0 0;
+      line-height: 1.36;
+      color: var(--ink);
+      font-size: 0.98rem;
+    }
+
+    .meta {
+      color: var(--ink);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-family: "Helvetica Neue Condensed", "Arial Narrow", "Arial", sans-serif;
+      font-weight: 900;
+    }
+
+    .section-best-bets .head { font-size: 1.14rem; }
+    .section-best-bets .card:first-child .head {
+      font-size: 1.55rem;
+      line-height: 1.12;
+      font-weight: 700;
+    }
+
+    .section-best-bets .card:not(:first-child) .head {
+      font-size: 1rem;
+      line-height: 1.26;
+      font-weight: 500;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    a:hover { background: rgba(0, 0, 0, 0.08); }
+
+    code {
+      font-family: "Courier New", "Courier", monospace;
+      font-size: 0.88em;
+      background: rgba(0, 0, 0, 0.07);
+      padding: 0.03rem 0.18rem;
+      border: 1px solid rgba(0, 0, 0, 0.22);
+    }
+
+    .footer {
+      margin-top: 18px;
+      color: var(--ink);
+      font-size: 12px;
+      font-weight: 800;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-top: 2px solid var(--rule);
+      padding-top: 9px;
+    }
+
+    @media (min-width: 1500px) {
+      main {
+        width: min(1480px, calc(100vw - 48px));
+        margin: 20px auto 36px;
+        padding: 22px 30px 32px;
+      }
+
+      h1 { font-size: 94px; }
+      .edition-title { font-size: 15px; }
+      .hero-card .value { font-size: 27px; }
+      .head { font-size: 20px; }
+      .section-best-bets .card:first-child .head { font-size: 29px; }
+      .section-best-bets .card:not(:first-child) .head { font-size: 18px; }
+      .meta, .detail, .body { font-size: 17px; line-height: 1.36; }
+      .meta { font-size: 13px; }
+    }
+
+    @media (max-width: 1020px) {
+      .sections { grid-template-columns: 1fr; gap: 12px; }
+      .paper-column + .paper-column {
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
+      }
+    }
+
+    @media (max-width: 780px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      main {
+        width: min(100vw - 16px, 980px);
+        margin: 8px auto 20px;
+        padding: 14px 14px 18px;
+      }
+      h1 { font-size: clamp(3rem, 13vw, 5rem); }
+      .eyebrow { font-size: 11px; }
+      .hero-card .value { font-size: 1.35rem; }
+      .hero-card {
+        border-right: none;
+        border-bottom: 2px solid var(--rule);
+      }
+      .hero-card:last-child { border-bottom: none; }
+    }
+    </style>
+</head>
+<body>
+  <main>
+    <section class="masthead">
+      <div class="eyebrow">
+        <span>Robby McCullough Morning Brief</span>
+        <span>Personal Brand Desk</span>
+        <span>November 28, 2026 at 7:32 AM</span>
+      </div>
+      <h1>The Morning Brief</h1>
+      <p class="edition-title">Saturday at the Turning Basin</p>
+      <div class="hero-grid">
+        <article class="hero-card">
+          <p class="label">Forecast</p>
+          <p class="value">Petaluma gets a partly sunny Saturday near 66°F. Fog may form overnight. Expect rain Sunday morning, then showers and a chance of thunder after 1 PM. <a href="https://forecast.weather.gov/MapClick.php?lat=38.23&amp;lon=-122.64" target="_blank" rel="noreferrer">National Weather Service</a></p>
+        </article>
+        <article class="hero-card">
+          <p class="label">Lead Assignment</p>
+          <p class="value">Give one downtown shop’s mobile site a 20-minute field test before heading out. How many taps does it take to find today’s hours, its address and a gift you could pick up?</p>
+        </article>
+      </div>
+      <div class="meta-row">
+        <span>Rendered from Markdown brief</span>
+        <span><a href="./source.md">Open source file</a></span>
+        <span>Generated November 28, 2026 at 7:32 AM</span>
+      </div>
+    </section>
+
+    <section class="sections">
+      <div class="paper-column lead-column"></div>
+<div class="paper-column middle-column">
+    <section class="section section-weather">
+      <div class="section-head">
+        <h2>Weather</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">A Weather West reader reported several Tahoe locations above freezing early this morning. That’s a reader observation. For Sunday plans closer to home, the Petaluma forecast calls for gusts up to 28 mph. <a href="https://weatherwest.disqus.com/latest.rss" target="_blank" rel="noreferrer">Weather West comments</a> · <a href="https://forecast.weather.gov/MapClick.php?lat=38.23&amp;lon=-122.64" target="_blank" rel="noreferrer">Petaluma forecast</a></p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    </div>
+<div class="paper-column right-column">
+    <section class="section section-sports">
+      <div class="section-head">
+        <h2>Sports</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">Seattle visits the 9–1 49ers Sunday at 1:25 PM Pacific on FOX. Christian McCaffrey scored a rushing touchdown last week, his ninth game this season with a touchdown from scrimmage. <a href="https://www.49ers.com/news/ways-to-watch-and-listen-seahawks-vs-49ers-week-12" target="_blank" rel="noreferrer">49ers viewing guide</a> · <a href="https://media.nfl.com/content/dam/communications/football-communications/2026/capsules/Week%2012%20Capsules.pdf" target="_blank" rel="noreferrer">NFL game notes</a></p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-new-today">
+      <div class="section-head">
+        <h2>New Today</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">New York’s postponed Thanksgiving parade moves to Saturday morning after Thursday’s wind and rain. Gloria Gaynor and LL Cool J joined the revised lineup. <a href="https://apnews.com/article/ba6b05f16873b2b8966de38d5be8444d" target="_blank" rel="noreferrer">Associated Press</a></p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-local-don-t-miss">
+      <div class="section-head">
+        <h2>Local / Don’t Miss</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">**Today at the Turning Basin.** Aim for 11:30 AM to see Santa and Mrs. Claus come upriver by tugboat around noon. Photos at River Plaza wrap up at 1:30 PM. <a href="https://www.goldengate.org/events/santas-riverboat-arrival/" target="_blank" rel="noreferrer">Riverboat details</a></p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">**Wednesday, December 2.** Petaluma Arts Center hosts *Life Reimagined*, an art and connection workshop. Its annual members’ show and auction runs through December 12. <a href="https://petalumaartscenter.org/events" target="_blank" rel="noreferrer">Arts Center calendar</a></p>
+              
+              
+              
+            </article>
+            
+
+            <article class="card compact">
+              <p class="head">**Plan ahead for December 12.** Petaluma Yacht Club’s lighted boats are scheduled to parade downtown. Check back before making plans because tides can change the date. <a href="https://www.visitpetaluma.com/blog/holiday-event-calendar/" target="_blank" rel="noreferrer">Visit Petaluma</a></p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    
+
+    <section class="section section-coverage-note">
+      <div class="section-head">
+        <h2>Coverage Note</h2>
+      </div>
+      <div class="section-body">
+        
+            <article class="card compact">
+              <p class="head">The Hacker News search yielded no timely WordPress discussion to join. Reddit blocked its live feed. X timing, Yahoo lineups and podcast leads remain unverified. Local listings came from downtown and the Arts Center. Mystic and Lagunitas calendars were unavailable. The seven-day work-priority review remains partial, and cloud-only conversations may be missing.</p>
+              
+              
+              
+            </article>
+            
+      </div>
+    </section>
+    </div>
+    </section>
+
+    <p class="footer">Daily brief archive: 2026-11-28-morning</p>
+  </main>
+</body>
+</html>
